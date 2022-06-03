@@ -1,6 +1,6 @@
 ---
 title: Persistencia en ficheros
-author: gerard
+author: mario
 date: 2022-06-03 13:46:00 +0800
 categories: [Java, files]
 tags: [java, persistencia, json, api, xml]
@@ -556,3 +556,9 @@ De quina forma modelaries les dades per obtenir les respostes a aquestes peticio
 Escull diverses APIs públiques i utilitza-les per a obtenir les seves dades. Hauràs de modelar almenys **6** respostes diferents.
 
 [https://github.com/public-apis/public-apis](https://github.com/public-apis/public-apis)
+
+-------------
+
+Webgrafía:
+
+- https://gerardfp.github.io/
