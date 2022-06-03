@@ -561,4 +561,4 @@ Escull diverses APIs públiques i utilitza-les per a obtenir les seves dades. Ha
 
 Webgrafía:
 
-- https://gerardfp.github.io/
+- [gerardfp.github.io](https://gerardfp.github.io/)
