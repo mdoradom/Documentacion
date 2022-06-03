@@ -1,7 +1,7 @@
 ---
 title: Primeros pasos en Firebase
 author: mario
-date: 2022-06-03 16:15:00 +0800
+date: 2022-06-03 17:11:00 +0800
 categories: [Java, api, firebase]
 tags: [java, firebase, json, api]
 render_with_liquid: false
