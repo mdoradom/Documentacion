@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-baseurl: /documentacion
+baseurl: '/documentacion'
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -13,10 +13,10 @@ baseurl: /documentacion
 lang: en
 
 # Additional parameters for datetime localization, optional. › https://github.com/iamkun/dayjs/tree/dev/src/locale
-prefer_datetime_locale: https://github.com/iamkun/dayjs/blob/dev/src/locale/es-do.js
+prefer_datetime_locale:
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Europe/Madrid
+timezone: Europe/Spain
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -26,7 +26,7 @@ title: Documentación                          # the main title
 tagline: Sobre cosas en general   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Documentación personal sobre movidas porque soy un desastre y no me acuerdo de como hacer cosas.
+  Documentación sobre movias que hago, porque soy un desastre y no me acuerdo.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://mdoradom.github.io'
@@ -80,10 +80,10 @@ theme_mode: dark   # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: 'https://raw.githubusercontent.com/cotes2020/chirpy-images/main'
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: '/commons/avatar.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
