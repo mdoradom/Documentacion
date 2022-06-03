@@ -2,7 +2,7 @@
 title: Spring Boot API
 author: mario
 date: 2022-06-03 16:15:00 +0800
-categories: [Java, API, Springboot]
+categories: [Java, api, springboot]
 tags: [java, springboot, json, api]
 render_with_liquid: false
 ---
