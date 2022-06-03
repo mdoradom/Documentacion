@@ -446,7 +446,7 @@ Heroku deploy
     
 * Publica el projecte a GitHub.
     
-* Crea un compte a [Heroku](heroku.com/)
+* Crea un compte a [Heroku](https://www.heroku.com/)
     
 * Crea una nova app a Heroku:
     
