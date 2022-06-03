@@ -1,9 +1,9 @@
 ---
-title: Primer post de prueba
+title: Syntax Template
 author: mario
 date: 2022-06-03 11:38:00 +0800
-categories: [Demo]
-tags: [prueba]
+categories: [Tutorial, Demo]
+tags: [template]
 math: true
 mermaid: true
 image:
@@ -13,7 +13,7 @@ image:
   alt: Esto era un esqueleto.
 ---
 
-This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
+Este documento es un template de como escribir las cosas en otros documentos.
 
 
 ## Titles
@@ -101,7 +101,7 @@ Moon
 
 ## Links
 
-<http://127.0.0.1:4000>
+<http://mdoradom.github.io/documentacion>
 
 ## Footnote
 
