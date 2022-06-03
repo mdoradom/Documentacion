@@ -73,11 +73,11 @@ System.out.println(time.getDayOfMonth());
 
 Fes un programa que rebi com a argument la ruta d'un directori i "aplani" (_flatten_) el seu contingut, és a dir, que mogui a aquest mateix directori tots els fitxers que tingui niats. També haurà d'esborrar tots els directoris niats. Per exemple, si executem el programa amb aquest directori "niats":
 
-![](persistencia-en-ficheros/ex1.png)
+![](https://i.imgur.com/3mRbl6P.png)
 
 hauria de quedar així:
 
-![](persistencia-en-ficheros/ex1-2.png)
+![](https://i.imgur.com/LV9Gv42.png)
 
 Utilitza aquestes comandes per a crear l'arbre de prova
 
@@ -122,11 +122,11 @@ Fes un programa que rebi com a argument un directori i organitzi els seus fitxer
 
 Per exemple, si cridem al programa amb aquest directori:
 
-![](persistencia-en-ficheros/ex3.png)
+![](https://i.imgur.com/lFYfiTJ.png)
 
 Hauria de quedar així:
 
-![](persistencia-en-ficheros/ex3-2.png)
+![](https://i.imgur.com/sIvlA7U.png)
 
 Arbre de prova:
 
@@ -538,7 +538,7 @@ El programa es podrà executar amb les següents opcions:
 
 Genera les classes necessàries per a emmagatzemar dades conformes amb aquest diagrama E/R. Crea objectes d'aquestes classes i emmagatzema'ls en un fitxer JSON.
 
-![](persistencia-en-ficheros/ex7.png)
+![](https://i.imgur.com/YkXpHpc.png)
 
 De quina forma modelaries les dades per obtenir les respostes a aquestes peticions?
 
