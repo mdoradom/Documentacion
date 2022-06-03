@@ -1,8 +1,12 @@
 name: 'Automatic build'
+
+permissions:
+  contents: write
+
 on:
   push:
     branches:
-      - master
+      - main
     paths-ignore:
       - .gitignore
       - README.md

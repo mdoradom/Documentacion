@@ -16,39 +16,39 @@ lang: en
 prefer_datetime_locale:
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Europe/Spain
+timezone:
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Documentación                          # the main title
+title: RemRemRemRe                          # the main title
 
-tagline: Sobre cosas en general   # it will display as the sub-title
+tagline: Have a nice Day :)   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Documentación sobre movias que hago, porque soy un desastre y no me acuerdo.
+  Sharing something useful to the world :)
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://mdoradom.github.io'
+url: 'https://RemRemRemRe.github.io'
 
 github:
-  username: mdoradom             # change to your github username
+  username: RemRemRemRe             # change to your github username
 
 twitter:
-  username: mariiiodorado_            # change to your twitter username
+  username: _RemRemRemRe_            # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Mario Dorado Martínez
-  email: mariodoradomartinez@gmail.com             # change to your email address
+  name: RemRemRemRe
+  email: RemRemRemRe@users.noreply.github.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/mariiiodorado_      # change to your twitter homepage
-    - https://github.com/mdoradom       # change to your github homepage
+    - https://twitter.com/_RemRemRemRe_      # change to your twitter homepage
+    - https://github.com/RemRemRemRe       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/mario-dorado-martinez
+    # - https://www.linkedin.com/in/username
 
 google_site_verification:               # fill in to your verification string
 
@@ -73,17 +73,17 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: dark   # [light|dark]
+theme_mode:   # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: 'https://raw.githubusercontent.com/cotes2020/chirpy-images/main'
+img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: '/commons/avatar.jpg'
+avatar:
 
 # boolean type, the global switch for ToC in posts.
 toc: true
@@ -195,3 +195,8 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+languages: ["en", "zh-CN"]
+default_lang: "en"
+exclude_from_localization: []
+parallel_localization: true
