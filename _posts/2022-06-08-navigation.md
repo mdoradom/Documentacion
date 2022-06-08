@@ -434,7 +434,15 @@ La clase ``NavigationUI``, es la encargada de administrar la navegación. Cuando
     
 3.  mostrar el destino (_fragment_) seleccionado en el ``NavHostFragment``
     
-4.  gestionar el icono hamburguer (mostrando el ![](https://i.imgur.com/jAjWSt5.png) o la flecha atrás ![](https://i.imgur.com/XooPU9f.png))
+4.  gestionar el icono hamburguer (mostrando el 
+    
+    ![](https://i.imgur.com/jAjWSt5.png) 
+    
+    o la flecha atrás 
+    
+    ![](https://i.imgur.com/XooPU9f.png)
+    
+    )
     
 
 Para activar y configurar ``NavigationUI``, hay que llamar a una serie de métodos estáticos.
@@ -480,12 +488,22 @@ public class DrawerActivity extends AppCompatActivity {
 
 Hay 2 cosas que obsevar en este código:
 
-*   La función del objeto ``appBarConfiguration`` es definir los destinos que serán **Top-level destinations**. Si marcamos un destino como Top-level, cuando se navegue a él, se mostrará el icono _hamb_ ![](https://i.imgur.com/jAjWSt5.png) en la Toolbar. En los destinos que **no** los pongamos como Top-level, se mostrará la flecha de "atrás" ![](https://i.imgur.com/XooPU9f.png).
+*   La función del objeto ``appBarConfiguration`` es definir los destinos que serán **Top-level destinations**. Si marcamos un destino como Top-level, cuando se navegue a él, se mostrará el icono _hamb_ 
+
+![](https://i.imgur.com/jAjWSt5.png) 
+
+en la Toolbar. En los destinos que **no** los pongamos como Top-level, se mostrará la flecha de "atrás" 
+
+![](https://i.imgur.com/XooPU9f.png).
     
 *   Las llamadas al método estático ``setupWithNavController()`` són las que habilitan a ``NavigationUI`` a administrar la navegación, sincronizando el menu ``NavigationView`` y la barra superior ``Tooblar``, con los destinos a los que se navega.
     
 
-Ahora puedes ejecutar la app, abrir la ``DrawerActivity``, y navegar usando el ``NaviagtionView`` por los 3 destinos: ``Drawer1Fragment``, ``Drawer2Fragment`` y ``Drawer3Fragment``. Observa cómo en el tercer fragment, se muestra la flecha de "atrás" ![](https://i.imgur.com/XooPU9f.png), ya que no es un destino Top-level.
+Ahora puedes ejecutar la app, abrir la ``DrawerActivity``, y navegar usando el ``NaviagtionView`` por los 3 destinos: ``Drawer1Fragment``, ``Drawer2Fragment`` y ``Drawer3Fragment``. Observa cómo en el tercer fragment, se muestra la flecha de "atrás" 
+
+![](https://i.imgur.com/XooPU9f.png)
+
+, ya que no es un destino Top-level.
 
 BottomNavigationView
 --------------------
@@ -614,7 +632,9 @@ Ejecuta la app, y comprueba que en la ``BottomActivity`` se puede navegar por lo
 OptionsMenu
 -----------
 
-El ``OptionsMenu`` es el menu desplegable que aparece en la parte superior derecha cuando se hace clic en el icono de los 3 puntos ![](https://i.imgur.com/WYMvHXW.png)
+El ``OptionsMenu`` es el menu desplegable que aparece en la parte superior derecha cuando se hace clic en el icono de los 3 puntos 
+
+![](https://i.imgur.com/WYMvHXW.png)
 
 Lo usaremos para navegar a 3 destinos
 
@@ -734,7 +754,11 @@ En esta activity se han anulado (``@Override``) dos métodos:
 *   El método ``onOptionsItemSelected()`` hace que se use el ``navController`` para navegar al destino cuando se pulse en un ítem.
     
 
-Ejecuta la app y comprueba la navegación con el ``OptionsMenu``. Observa que el primer ítem aparece como un icono en la barra. Y también que cuando se navega al tercer fragment, aparece el boton de "atrás" ![](https://i.imgur.com/XooPU9f.png), ya que no está puesto como destino Top-level.
+Ejecuta la app y comprueba la navegación con el ``OptionsMenu``. Observa que el primer ítem aparece como un icono en la barra. Y también que cuando se navega al tercer fragment, aparece el boton de "atrás" 
+
+![](https://i.imgur.com/XooPU9f.png)
+
+, ya que no está puesto como destino Top-level.
 
 TabLayout y ViewPager2
 ----------------------
