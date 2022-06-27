@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-Onboarding GD APP
+Principios de diseño: Onboarding
 ================
 
 El Onboarding es una **unboxing virtual** que ayuda a los usuarios a comenzar con una aplicación.
