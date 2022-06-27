@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-Principios de diseño: Onboarding
+Onboarding
 ================
 
 El Onboarding es una **unboxing virtual** que ayuda a los usuarios a comenzar con una aplicación.
