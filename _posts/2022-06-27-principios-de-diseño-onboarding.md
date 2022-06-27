@@ -19,7 +19,9 @@ El Onboarding tiene que tener un **objetivo específico** enfocado a nivel de **
 
 | Contexto del usuario | Objetivos del Onboarding |
 | --- | --- |
-| <ul><li>El usuario ya ha instalado la app y no necesita ver mas marketing</li><li>El usuario está ansioso por probar la aplicación sin leer un manual de instrucciones</li><li>El usuario aún no está familiarizado con la UI de la app o no está listo para aprender sobre ella</li></ul> | <ul><li>Saludar al usuario y emocionar al usuario sobre la experiencia que le espera</li><li>Ayudar al usuario a comprender implícita o explícitamente cómo se puede usar la aplicación en sus vidas</li><li>Impulsa al usuario a realizar acciones que aumenten el compromiso y la retención en los primeros siete días</li></ul> |
+| El usuario ya ha instalado la app y no necesita ver mas marketing | Saludar al usuario y emocionar al usuario sobre la experiencia que le espera |
+| El usuario está ansioso por probar la aplicación sin leer un manual de instrucciones | Ayudar al usuario a comprender implícita o explícitamente cómo se puede usar la aplicación en sus vidas |
+| El usuario aún no está familiarizado con la UI de la app o no está listo para aprender sobre ella | Impulsa al usuario a realizar acciones que aumenten el compromiso y la retención en los primeros siete días|
 
 El Onboarding es un punto en un viaje más largo que **comienza** en la **app store** y **termina** cuando el usuario realiza la primera **acción relacionada** con la **retención** clave en su aplicación.
 
