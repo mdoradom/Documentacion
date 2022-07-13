@@ -144,3 +144,11 @@ El objetivo es garantizar que la funcionalidad del software sea **compatible** d
 [TestComplete](https://smartbear.com/product/testcomplete/overview/)
 
 [TestLink](https://testlink.org/)
+
+------
+
+Webgrafía
+
+- [How They Test](https://abhivaikar.github.io/howtheytest)
+
+- [SmartBear](https://smartbear.com/learn/automated-testing/software-testing-methodologies/)
