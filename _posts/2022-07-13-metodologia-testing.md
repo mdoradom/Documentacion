@@ -1,7 +1,7 @@
 ---
 title: "Metodología sobre el testeo de software"
 author: mario
-date: 2022-07-14 16:23:00 +0800
+date: 2022-07-14 15:47:00 +0800
 categories: [Testing]
 tags: [testing]
 math: true
