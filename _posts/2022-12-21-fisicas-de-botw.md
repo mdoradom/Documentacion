@@ -1,6 +1,6 @@
 ---
 title: Físicas de The Legend of Zelda - Breath of the Wild
-author: mario, marta
+author: [mario, marta]
 date: 2022-12-21 12:00:00 +0800
 categories: [Fisica]
 tags: [fisica, analisis, videojuegos]
