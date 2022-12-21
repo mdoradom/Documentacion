@@ -23,7 +23,7 @@ image:
 
 # Caída libre
 
-<iframe src="http://www.youtube.com/embed/X8050fWKUV4" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+<iframe src="http://www.youtube.com/embed/X8050fWKUV4" width="560" height="315" frameborder="0"></iframe>
 
 ## MRUA
 
