@@ -23,7 +23,7 @@ image:
 
 # Caída libre
 
-[![IMAGE_ALT](https://img.youtube.com/vi/X8050fWKUV4/0.jpg)](https://www.youtube.com/watch?v=X8050fWKUV4)
+<iframe src="http://www.youtube.com/embed/X8050fWKUV4" width="560" height="315" frameborder="0" allowfullscreen></iframe>
 
 ## MRUA
 
@@ -57,11 +57,15 @@ vel vertical → MRUA (aceleración gravedad) vel horizontal * tan (sen/cos)
 
 $$ V_y = \left | V \right |\cdot \sin\alpha $$
 
-Vy = (Vx / cos α) * sin α (substituir módulo por velocidad horizontal)
+(substituir módulo por velocidad horizontal)
 
-Vy = Vx * sin α / cos α (relación trigonométrica sin α / cos α = tan α)
+$$ V_y = (\frac{V_x}{\cos\alpha}) \cdot \sin\alpha $$
 
-Vy = Vx * tan α
+(relación trigonométrica sin α / cos α = tan α)
+
+$$ V_y = V_x \cdot \frac{\sin\alpha}{\cos\alpha} $$ 
+
+$$ V_y = V_x \cdot \tan\alpha $$ 
 
 -34,65 m/s2
 
