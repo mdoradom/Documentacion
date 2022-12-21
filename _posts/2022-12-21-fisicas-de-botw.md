@@ -17,11 +17,21 @@ image:
 
 ![](/assets/images/botw/separador.png)
 
-Hemos decidido analizar el videojuego **The Legend of Zelda: Breath of the Wild** ya que es un título el que uno de sus logros, es haber creado un sistema de físicas bastante elaborado que interactua entre si.
+Hemos decidido analizar el videojuego **The Legend of Zelda: Breath of the Wild** ya que uno de sus grandes logros, es haber creado un sistema de físicas bastante elaborado que interactua entre si.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">BotW physics in a nutshell <a href="https://twitter.com/hashtag/BreathoftheWild?src=hash&amp;ref_src=twsrc%5Etfw">#BreathoftheWild</a> <a href="https://twitter.com/hashtag/NintendoSwitch?src=hash&amp;ref_src=twsrc%5Etfw">#NintendoSwitch</a> <a href="https://t.co/o341FlzcpI">pic.twitter.com/o341FlzcpI</a></p>&mdash; Pinwheel Popper (@PinwheelPopper) <a href="https://twitter.com/PinwheelPopper/status/1162063176520704001?ref_src=twsrc%5Etfw">August 15, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Este sistema contempla que los metales son conductores, entonces si utilizas armas eléctricas, puedes crear corrientes eléctricas para así resolver puzzles.
+
+![](https://i.imgur.com/miBXgFC.jpeg)
 
 <iframe id="reddit-embed" src="https://www.redditmedia.com/r/Breath_of_the_Wild/comments/xkvzbc/man_you_really_constantly_break_weapons_shit_game/?ref_source=embed&amp;ref=share&amp;embed=true&amp;theme=dark" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="407" width="640" scrolling="no"></iframe>
+
+También, los objetos tienes propiedades físicas básicas. Por ejemplo, si están en una tabla y esa tabla es empujada por un objeto pesado, los objetos son disparados.
+
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">BotW physics in a nutshell <a href="https://twitter.com/hashtag/BreathoftheWild?src=hash&amp;ref_src=twsrc%5Etfw">#BreathoftheWild</a> <a href="https://twitter.com/hashtag/NintendoSwitch?src=hash&amp;ref_src=twsrc%5Etfw">#NintendoSwitch</a> <a href="https://t.co/o341FlzcpI">pic.twitter.com/o341FlzcpI</a></p>&mdash; Pinwheel Popper (@PinwheelPopper) <a href="https://twitter.com/PinwheelPopper/status/1162063176520704001?ref_src=twsrc%5Etfw">August 15, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Otro ejemplo que nos hemos encontrado mientras grabábamos el material necesario para el análisis, es que si disparas una flecha contra piedra, la flecha queda suelta, y las ráfagas de viento las hacen rodar por el suelo, sin embargo, si es disparada contra una superficie en la que hay tierra o césped, la flecha queda clavada y no se mueve por las ráfagas de viento.
+
+<iframe src="https://www.youtube.com/embed/nTexDIfNbLU" width="560" height="315" frameborder="0"></iframe>
 
 # Como hemos tomado medidas
 
