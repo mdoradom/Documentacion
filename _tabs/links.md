@@ -16,5 +16,6 @@ order: 4
   - [Material Design - Google Icons](https://fonts.google.com/icons)
   - [Material Design - Google Fonts](https://fonts.google.com/fonts)
 - [Temp Mail](https://temp-mail.org/es/)
+- [Latex Editor](https://latex.codecogs.com/legacy/eqneditor/editor.php)
 
 ![](https://pbs.twimg.com/media/E8c6-2pWYAEAjRG.jpg)

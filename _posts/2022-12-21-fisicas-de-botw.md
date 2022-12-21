@@ -17,6 +17,12 @@ image:
 
 ![](/assets/images/botw/separador.png)
 
+Hemos decidido analizar el videojuego **The Legend of Zelda: Breath of the Wild** ya que es un título el que uno de sus logros, es haber creado un sistema de físicas bastante elaborado que interactua entre si.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">BotW physics in a nutshell <a href="https://twitter.com/hashtag/BreathoftheWild?src=hash&amp;ref_src=twsrc%5Etfw">#BreathoftheWild</a> <a href="https://twitter.com/hashtag/NintendoSwitch?src=hash&amp;ref_src=twsrc%5Etfw">#NintendoSwitch</a> <a href="https://t.co/o341FlzcpI">pic.twitter.com/o341FlzcpI</a></p>&mdash; Pinwheel Popper (@PinwheelPopper) <a href="https://twitter.com/PinwheelPopper/status/1162063176520704001?ref_src=twsrc%5Etfw">August 15, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/Breath_of_the_Wild/comments/xkvzbc/man_you_really_constantly_break_weapons_shit_game/?ref_source=embed&amp;ref=share&amp;embed=true&amp;theme=dark" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="407" width="640" scrolling="no"></iframe>
+
 # Como hemos tomado medidas
 
 ![](/assets/images/botw/separador.png)
@@ -51,7 +57,8 @@ $$  X(0) = 78.2 + 0 + \frac{1}{2} \cdot (t * 9.81)^{2} $$
 # Tiro parabólico
 
 38 link/s vel horizontal → const, porque hay poca fricción con aire
-Vx = |V| * cos α
+
+$$ V_x = \left | V \right |\cdot \cos\alpha $$
 
 vel vertical → MRUA (aceleración gravedad) vel horizontal * tan (sen/cos)
 
@@ -67,6 +74,6 @@ $$ V_y = V_x \cdot \frac{\sin\alpha}{\cos\alpha} $$
 
 $$ V_y = V_x \cdot \tan\alpha $$ 
 
--34,65 m/s2
+**-34,65 m/s<sup>2</sup>**
 
 # Catapulta
