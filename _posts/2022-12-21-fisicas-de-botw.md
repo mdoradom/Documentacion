@@ -90,6 +90,12 @@ Para medir la **distancia que ha recorrido la flecha**, hemos hecho una captura 
 
 ![](/assets/images/botw/tiro_parabolico.png)
 
+![](/assets/images/botw/tiro_parabolico.png)
+
+Al final con todos estos valores obtenemos que la flecha es disparada con unos **14.3 grados** de inclinación y recorre **64.6 metros** en **1 segundo**.
+
+![](/assets/images/botw/tiro_parabolico.png)
+
 Vel horizontal = distancia horizontal / tiempo    (constante)
 
 $$ \frac{64.6}{1} = 64.6 m/s = 38 link/s$$
