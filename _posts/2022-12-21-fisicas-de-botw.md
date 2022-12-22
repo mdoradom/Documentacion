@@ -134,7 +134,7 @@ $$ m = \frac{283030}{\left | -33.34 \right | \cdot 17.85} = 475.59kg $$
 
 475.59kg es la masa mínima que tendría que tener la piedra para lanzar disparado a Link a esa velocidad.
 
-Para comprobar si en el juego, se conservan las energías, hemos mirado la energía potencial en el punto máximo de altura y la hemos comparado con la energía cinética que tiene Link al ser lanzado.
+Para comprobar si en el juego, se conservan las energías, hemos mirado la energía potencial en el punto máximo de altura y la hemos comparado con la energía cinética que tiene Link al ser lanzado. 
 
 $$ Ep = m \cdot g \cdot h $$
 
