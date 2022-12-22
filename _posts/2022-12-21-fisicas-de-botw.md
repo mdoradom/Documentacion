@@ -41,38 +41,64 @@ Otro ejemplo que nos hemos encontrado mientras grabábamos el material necesario
 
 # Caída libre
 
-<iframe src="https://www.youtube.com/embed/X8050fWKUV4" width="560" height="315" frameborder="0"></iframe>
+Primero de todo, hemos analizado una caída libre lanzando al personaje de Link desde una torre, así podremos saber la gravedad que hay dentro del videojuego y ver si es un valor realista.
 
-## MRUA
+<iframe src="https://www.youtube.com/embed/TtMEWS2lYz0" width="560" height="315" frameborder="0"></iframe>
 
-### Tiempo en el juego
+- **h suelo:** 0 m
+- **h torre:** 78.2 m
+- **t caída:** 2.152 s
+- **a:** ?
 
-$$ X(t) = X_{0} + V_{0}t + \frac{1}{2} \cdot at^{2} $$
+Al ser una caída libre, hemos utilizado la forma del MRUA, ya que es un movimiento acelerado por la gravedad.
 
-0 (altura suelo) = 78,2m (altura torre) + 0 + ½ * 2,152 (tiempo q tarda en caer) * a
+## Tiempo en el juego
 
-$$  X(0) = 78.2 + 0 + \frac{1}{2} \cdot 2.152 \cdot a^{2} $$
+$$ X(t) = X_{0} + v_{0}t + \frac{1}{2} \cdot at^{2} $$
 
-**-33.83 m/s<sup>2</sup>**
+$$  0 = 78.2 + 0 + \frac{1}{2} \cdot 2.152 \cdot a^{2} $$
 
+$$ a^{2} = \frac{-78.2 - \frac{1}{2}}{2.152} = ¿¿¿¿-33.83????$$
 
-### Tiempo en la vida real
+Haciendo los cálculos, podemos observar que la fuerza de la gravedad es de unos **-33.83 m/s<sup>2</sup>** o **-19.9 links/s<sup>2</sup>**, lo cual es un valor muy superior al de la tierra (**9.8 m/s<sup>2</sup>**), esto significa que, en el mundo de The Legend of Zelda: Breath of the Wild, hay mas gravedad que en Júpiter (**24.79 m/s<sup>2</sup>**).
 
-$$ X(t) = X_{0} + V_{0}t + \frac{1}{2} \cdot at^{2} $$
+## Tiempo en la vida real
 
-0 (altura suelo) = 78,2m (altura torre) + 0 + ½ * t^2 (tiempo q tarda en caer) * 9,81
+Haciendo los cálculos con la gravedad que tenemos en el planeta tierra, podemos obtener el tiempo que tardaría Link en caer desde lo alto de la torre hasta el suelo y ver la diferencia con los tiempos que hemos medido dentro del juego.
 
-$$  X(0) = 78.2 + 0 + \frac{1}{2} \cdot t \cdot 9.81^{2} $$
+Utilizamos la formula del **MRUA:**
 
-**3.99 segundos**
+$$ X(t) = X_{0} + v_{0}t + \frac{1}{2} \cdot at^{2} $$
+
+$$  0 = 78.2 + 0 + \frac{1}{2} \cdot t \cdot 9.81^{2} $$
+
+Haciendo los cálculos, obtenemos que la misma caída con unos valores de gravedad realistas, la caída duraría **3.99 segundos**.
 
 # Tiro parabólico
 
+Para analizar que factores físicos tiene en cuenta el videojuego a la hora de realizar un tiro parabólico, hemos disparado una flecha con un arco.
+
+Para calcular el tiro parabólico, necesitamos saber el **ángulo** en el cual sale disparada la flecha, **cuanto tiempo tarda** en impactar contra el suelo, a **cuanta distancia impacta**.
+
+Para calcular el **ángulo**, **INSERTAR COSA DE MARTRA**
+
+Para saber cuanto **tiempo tarda** en impactar contra el suelo, hemos disparado la flecha y cronometrado cuanto tiempo tarda en impactar el suelo.
+
+<iframe src="https://www.youtube.com/embed/q6r8Fk71xdA" width="560" height="315" frameborder="0"></iframe>
+
+Para medir la **distancia que ha recorrido la flecha**, hemos hecho una captura colocando el personaje desde la posición que se ha disparado la flecha, y otra dónde ha impactado la flecha, y utilizando al personaje como forma de medida, hemos sacado la distancia.
+
+![](/assets/images/botw/tiro_parabolico.png)
+
+Vel horizontal = distancia horizontal / tiempo    (constante)
+
+$$ \frac{64.6}{1} = 64.6 m/s = 38 link/s$$
+
 38 link/s vel horizontal → const, porque hay poca fricción con aire
 
-$$ V_x = \left | V \right |\cdot \cos\alpha $$
-
 vel vertical → MRUA (aceleración gravedad) vel horizontal * tan (sen/cos)
+
+$$ V_x = \left | V \right |\cdot \cos\alpha $$
 
 $$ V_y = \left | V \right |\cdot \sin\alpha $$
 
@@ -86,7 +112,21 @@ $$ V_y = V_x \cdot \frac{\sin\alpha}{\cos\alpha} $$
 
 $$ V_y = V_x \cdot \tan\alpha $$ 
 
-**-34,65 m/s<sup>2</sup>**
+$$ V_y = 64.6 \cdot \tan 14.3^{\circ} = 16.47m/s $$
+
+Velocidad vertical = 16.47 m/s
+
+Para calcular la gravedad (utilizamos solo la componente de velocidad vertical, ya que para esta velocidad usamos la formula de MRUA por la gravedad, en la horizontal no) **MRUA:**
+
+$$ X(t) = X_{0} + v_{0}t + \frac{1}{2} \cdot at^{2} $$
+
+$$ 0 = 0.85 + 16.47 \cdot 1 + \frac{1}{2} \cdot a \cdot 1^{2} $$
+
+$$ a = \frac{(-0.85) - (-16.47) \cdot 1}{1^{2} \cdot \frac{1}{2}} = 32.09 m/s^{2}$$
+
+*0.85 = 0.5 links (altura inicial desde la que se lanza la flecha)
+
+Fuerza de la gravedad: **-32.09 m/s<sup>2</sup>**
 
 # Catapulta
 
@@ -94,9 +134,9 @@ Primero necesitamos saber la velocidad a la que sale despedido link. Teniendo en
 
 **MRUA:**
 
-$$ X(t) = X_{0} + V_{0}t + \frac{1}{2} \cdot at^{2} $$
+$$ X(t) = X_{0} + v_{0}t + \frac{1}{2} \cdot at^{2} $$
 
-$$ 0 = 2.55 + V_{0} \cdot 2.44 + \frac{1}{2} \cdot (-33.34) \cdot 2.44^{2} $$
+$$ 0 = 2.55 + v_{0} \cdot 2.44 + \frac{1}{2} \cdot (-33.34) \cdot 2.44^{2} $$
 
 $$ V_{0} = 93.32 m/s $$
 
@@ -126,6 +166,10 @@ $$ \frac{1}{2} \cdot 65 \cdot 93.32^{2} = 283.03kJ$$
 
 Teniendo en cuenta la piedra no da toda la energía en el choque con la plataforma, no podemos saber la masa exacta de la piedra, pero podemos determinar la masa mínima, esto lo podemos saber igualando la energía potencial de la piedra con la energía cinética de link, al hacer esto, sacaríamos la masa de la piedra si disipara toda su energía al contactar con la plataforma y no al contactar con el suelo.
 
+Para la altura, hemos cogido la altura total, porque, si pusiéramos la altura total - la plataforma, estaríamos diciendo que toda la energía se transfiere cuando la piedra toca la plataforma, pero eso no es verdad, así que asumimos que la energía es transferida de forma uniforme mientras la piedra empuja la plataforma y que transfiere toda la energía cuando toca el suelo. 
+
+Así que esto es una aproximación de si toda la energía de la piedra fuera transferida a Link, lo cual es mentira porque en el vídeo se aprecia que la piedra aun tiene energía al tocar el suelo. Así que estos cálculos serían una cota inferior.
+
 $$ Ep = m \cdot g \cdot h $$
 
 $$ m \cdot \left | -33.34 \right | \cdot 17.85 = 283.03kJ $$
@@ -143,3 +187,27 @@ $$ Ep = 65 \cdot \left | -33.34 \right | \cdot 21.7 - 2.55 = 47.02kJ$$
 $$ 283.03 - 47.02 = 236.01kJ $$
 
 Hay una pérdida de energía de 236.01kJ porque motivos (tirarse un triple)
+
+# Salto de Link
+
+<iframe src="https://www.youtube.com/embed/S1UJQTvV9-w" width="560" height="315" frameborder="0"></iframe>
+
+![foto medidas salto](/assets/images/botw/salto.png)
+
+**MRUA:**
+
+$$ X(t) = X_{0} + v_{0}t + \frac{1}{2} \cdot at^{2} $$
+
+$$ 0 = 0 + v_{0} \cdot 0.27 + \frac{1}{2} \cdot (-33.34) \cdot 0.27^{2} $$
+
+$$ v_{0} = 0.95m/s $$
+
+Link al saltar, tiene una velocidad inicial de 0.95 m/s.
+
+No podemos calcular la fuerza con la que salta Link, ya que la animación es instantánea, no podemos medir cuanto tiempo Link está acelerando.
+
+También hemos observado que el videojuego no tiene en cuenta la masa de Link, ya que salta la misma altura cuando tiene equipada una armadura y sus armas.
+
+<iframe src="https://www.youtube.com/embed/kXUfvma6VYQ" width="560" height="315" frameborder="0"></iframe>
+
+![foto medidas salto](/assets/images/botw/salto2.png)
