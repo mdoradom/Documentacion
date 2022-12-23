@@ -55,7 +55,7 @@ Gracias a este dato y a las capturas que hemos ido tomando dentro del juego, hem
 
 De esta forma hemos obtenido unas distancias aproximadas. Y de forma colateral, hemos creado una nueva unidad para medir longitudes, el _**Link**_
 
-![]()
+![](/assets/images/botw/medidas.png)
 
 $$ 1 Link = 1.70 metros $$
 
