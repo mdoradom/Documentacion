@@ -168,12 +168,14 @@ _Perspectiva del jugador antes de soltar la piedra_
 Primero, necesitamos saber la velocidad a la que sale despedido link. Teniendo en cuenta la **gravedad**, el **tiempo** que tarda en caer y la **posición inicial**.
 
 <p align="center">
-<iframe src="https://www.youtube.com/embed/xzITcvyslpQ" width="560" height="315" frameborder="0"></iframe>{: width="560" height="315" }
+<iframe src="https://www.youtube.com/embed/xzITcvyslpQ" width="560" height="315" frameborder="0"></iframe>
+
 _Video con medidas_
 </p>
 
 <p align="center">
-<iframe src="https://www.youtube.com/embed/Ng4EZuRpI88" width="560" height="315" frameborder="0"></iframe>{: width="560" height="315" }
+<iframe src="https://www.youtube.com/embed/Ng4EZuRpI88" width="560" height="315" frameborder="0"></iframe>
+
 _Video con temporizador_
 </p>
 
