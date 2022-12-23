@@ -21,7 +21,8 @@ Hemos decidido analizar el videojuego **The Legend of Zelda: Breath of the Wild*
 
 Este sistema contempla que los metales son conductores, entonces si utilizas armas eléctricas, puedes crear corrientes eléctricas para así resolver puzzles.
 
-![](https://i.imgur.com/miBXgFC.jpeg)
+![](https://i.imgur.com/miBXgFC.jpeg){: width="560" height="315" }
+_Ejemplo de como un jugador resuelve un puzzle de forma alternativa utilizando armas y armaduras como elementos para conducir la electricidad_
 
 También, los objetos tienes propiedades físicas básicas. Por ejemplo, si están en una tabla y esa tabla es empujada por un objeto pesado, los objetos son disparados.
 
@@ -45,7 +46,7 @@ Primero de todo, hemos analizado una caída libre lanzando al personaje de Link 
 
 <iframe src="https://www.youtube.com/embed/TtMEWS2lYz0" width="560" height="315" frameborder="0"></iframe>
 
-![](/assets/images/botw/torre1.jpg){: width="1920" height="1080" }
+![](/assets/images/botw/torre1.jpg){: width="560" height="315" }
 _Comparativa de tamaño entre Link y la torre_
 
 <iframe src="https://www.youtube.com/embed/wsFKrTRr9J4" width="560" height="315" frameborder="0"></iframe>
@@ -95,11 +96,10 @@ Para saber cuanto **tiempo tarda** en impactar contra el suelo, hemos disparado 
 
 Para medir la **distancia que ha recorrido la flecha**, hemos hecho una captura colocando el personaje desde la posición que se ha disparado la flecha, y otra dónde ha impactado la flecha, y utilizando al personaje como forma de medida, hemos sacado la distancia.
 
-![](/assets/images/botw/tiro_parabolico.png)
+![](/assets/images/botw/tiro_parabolico.png){: width="560" height="315" }
+_Parábola que realiza la flecha al ser disparada_
 
 Al final con todos estos valores obtenemos que la flecha es disparada con unos **14.3 grados** de inclinación y recorre **64.6 metros** en **1 segundo**.
-
-![](/assets/images/botw/tiro_parabolico.png)
 
 A continuación, vamos a descomponer el vector velocidad en dos componentes: velocidad horizontal y velocidad vertical.
 
@@ -147,7 +147,24 @@ Obtenemos que, la fuerza de la gravedad es igual a: **-32.09 m/s<sup>2</sup>** o
 
 ![](/assets/images/botw/separador.png)
 
-Primero necesitamos saber la velocidad a la que sale despedido link. Teniendo en cuenta la **gravedad**, el **tiempo** que tarda en caer y la **posición inicial**.
+Utilizando varios elementos que encontramos sueltos por el mundo de **Breath of the Wild**, podemos crear fácilmente una suerte de catapulta, hemos querido como de fidedigna son las físicas comparándolas con la vida real.
+
+![](/assets/images/botw/catapulta1.jpg){: width="560" height="315" }
+_Materiales para utilizados para crear la catapulta_
+
+![](/assets/images/botw/catapulta2.jpg){: width="560" height="315" }
+_Imagen de la catapulta desde cerca_
+
+![](/assets/images/botw/catapulta3.jpg){: width="560" height="315" }
+_Perspectiva del jugador antes de soltar la piedra_
+
+Primero, necesitamos saber la velocidad a la que sale despedido link. Teniendo en cuenta la **gravedad**, el **tiempo** que tarda en caer y la **posición inicial**.
+
+<iframe src="https://www.youtube.com/embed/xzITcvyslpQ" width="560" height="315" frameborder="0"></iframe>{: width="560" height="315" }
+_Video con medidas_
+
+<iframe src="https://www.youtube.com/embed/Ng4EZuRpI88" width="560" height="315" frameborder="0"></iframe>{: width="560" height="315" }
+_Video con temporizador_
 
 **MRUA:**
 
