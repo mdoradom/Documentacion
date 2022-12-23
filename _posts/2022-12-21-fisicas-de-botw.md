@@ -13,13 +13,18 @@ image:
   alt: Físicas de The Legend of Zelda - Breath of the Wild
 ---
 
+# Autores
+
+- Marta Jover Valero
+- Mario Dorado Martínez
+
 # Introducción
 
 ![](/assets/images/botw/separador.png)
 
 Hemos decidido analizar el videojuego **The Legend of Zelda: Breath of the Wild** ya que uno de sus grandes logros, es haber creado un sistema de físicas bastante elaborado que interactua entre si.
 
-Este sistema contempla que los metales son conductores, entonces si utilizas elementos metálicos como espadas, escudos, etc, puedes crear una suerte de cables para así resolver puzzles.
+Este sistema contempla que los metales son conductores, por tanto si utilizas elementos metálicos como espadas, escudos, etc, puedes crear una suerte de cables para así resolver puzzles.
 
 ![](https://i.imgur.com/miBXgFC.jpeg){: width="560" height="315" }
 _Ejemplo de como un jugador resuelve un puzzle de forma alternativa utilizando armas y armaduras como elementos para conducir la electricidad_
@@ -51,6 +56,8 @@ Para tomar las medidas para realizar los cálculos, henos cogido como referencia
 Gracias a este dato y a las capturas que hemos ido tomando dentro del juego, hemos ido colocando al personaje repetidas veces sobre las superficies que queríamos medir utilizando el programa Photoshop.
 
 De esta forma hemos obtenido unas distancias aproximadas. Y de forma colateral, hemos creado una nueva unidad para medir longitudes, el _**Link**_
+
+![]()
 
 $$ 1 Link = 1.70 metros $$
 
@@ -117,6 +124,8 @@ $$ \alpha =\arctan (tan(\alpha )) $$
 
 De esta forma, sacamos de forma aproximada el ángulo de la parábola.
 
+![](/assets/images/botw/ejes.png)
+
 Para saber cuanto **tiempo tarda** en impactar contra el suelo, hemos disparado la flecha y cronometrado cuanto tiempo tarda en caer al suelo.
 
 <p align="center">
@@ -169,7 +178,7 @@ $$ a = \frac{(-0.85) - (-16.47) \cdot 1}{1^{2} \cdot \frac{1}{2}} = 32.09 m/s^{2
 > *0.85 m = 0.5 links (altura inicial desde la que se lanza la flecha).
 {: .prompt-info }
 
-Obtenemos que, la fuerza de la gravedad es igual a: **-32.09 m/s<sup>2</sup>** o **-18.88 links/s<sup>2</sup>**, que es un valor bastante similar al que hemos calculado previamente en la caída libre.
+Obtenemos que, la fuerza de la gravedad es igual a: **-32.09 m/s<sup>2</sup>** o **-18.88 links/s<sup>2</sup>**, que es un valor bastante similar al que hemos calculado previamente en la caída libre. Podemos asumir que el juego tiene un único valor para la gravedad, y que la diferencia entre los valores es debida a errores de medida.
 
 # Catapulta
 
@@ -218,7 +227,7 @@ Dividiendo la velocidad inicial entre el tiempo que tarda Link en despegar, pode
 
 $$ \frac{93.32}{0.085} = 1097.88 m/s^{2} $$
 
-Lo cual nos dá que Link acelera a una velocidad de **1097.88 m/s<sup>2</sup>** o **645,81 links/s<sup>2</sup>**.
+Lo cual nos da que Link acelera a una velocidad de **1097.88 m/s<sup>2</sup>** o **645,81 links/s<sup>2</sup>**.
 
 Sabiendo la **aceleración**, podemos multiplicarla por la **masa** y así obtener la **fuerza** que recibe el personaje.
 
@@ -235,9 +244,9 @@ $$ \frac{1}{2} \cdot mv^{2}$$
 
 $$ \frac{1}{2} \cdot 65 \cdot 93.32^{2} = 283.03kJ$$
 
-Para la altura, hemos cogido la altura total, porque, si pusiéramos la altura total - la altura de  plataforma, estaríamos diciendo que toda la energía se transfiere cuando la piedra toca la plataforma, pero eso no es verdad, así que asumimos que la energía es transferida de forma uniforme mientras la piedra empuja la plataforma y que transfiere toda la energía cuando toca el suelo. 
+Para la altura hemos cogido la altura total, porque, si pusiéramos la altura total menos la altura de la plataforma, estaríamos diciendo que toda la energía se transfiere cuando la piedra toca la plataforma, pero, eso no es verdad. Así que asumimos que la energía es transferida de forma uniforme mientras la piedra empuja la plataforma y que transfiere toda la energía cuando toca el suelo. 
 
-Teniendo en cuenta esto, podemos decir que esto es una aproximación asumiendo que toda la energía de la piedra fuera transferida a Link, lo cual es mentira porque en el vídeo se aprecia que la piedra aun tiene energía al contactar con suelo, así que estos cálculos serían una cota inferior.
+Teniendo en cuenta esto, podemos decir que esto es una aproximación asumiendo que toda la energía de la piedra fuera transferida a Link, lo cual es mentira, porque en el vídeo se aprecia que la piedra aún tiene energía al contactar con suelo. Así que estos cálculos serían una cota inferior.
 
 $$ Ep = m \cdot g \cdot h $$
 
@@ -255,7 +264,7 @@ $$ Ep = 65 \cdot \left | -33.34 \right | \cdot 21.7 - 2.55 = 47.02kJ$$
 
 $$ 283.03 - 47.02 = 236.01kJ $$
 
-Haciendo estos cálculos, podemos observar que hay una pérdida de energía de 236.01kJ, lo cual es físicamente imposible ya que la energía es una fuerza conservativa. No sabemos cual puede ser el factor por el cual perdemos tanta energía, ya que la fricción con el aire no debería disiparla tanto.
+Haciendo estos cálculos, podemos observar que hay una pérdida de energía de 236.01kJ, lo cual no es realista, ya que la energía es una magnitud conservativa. No sabemos cual puede ser el factor por el cual perdemos tanta energía, ya que la fricción con el aire no debería disiparla tanto.
 
 Habiendo analizado todos estos parámetros, podemos decir que las físicas del videojuego son bastante dispares con las físicas reales.
 
@@ -263,7 +272,7 @@ Habiendo analizado todos estos parámetros, podemos decir que las físicas del v
 
 ![](/assets/images/botw/separador.png)
 
-Teníamos curiosidad sobre si el juego tenía en cuenta el peso de Link a la hora de calcular las físicas dentro del juego. Para comprobar esto, hemos capturado dos vídeos del personaje saltando con una armadura y sus armas equipadas, lo cual aumentaría la masa que tiene que elevar Link a la hora de salta, y otro salto sin nada. En teoría, Link debería saltar mas sin tener nada equipado.
+Teníamos curiosidad sobre si el juego tenía en cuenta el peso de Link a la hora de calcular las físicas dentro del juego. Para comprobar esto, hemos capturado dos vídeos del personaje saltando con una armadura y sus armas equipadas, lo cual aumentaría la masa que tiene que elevar Link a la hora de saltar, y otro salto sin nada. En teoría, Link debería saltar más sin tener nada equipado.
 
 <p align="center">
 <iframe src="https://www.youtube.com/embed/S1UJQTvV9-w" width="560" height="315" frameborder="0"></iframe>
