@@ -69,7 +69,7 @@ $$ X(t) = X_{0} + v_{0}t + \frac{1}{2} \cdot at^{2} $$
 
 $$  0 = 78.2 + 0 + \frac{1}{2} \cdot 2.152 \cdot a^{2} $$
 
-$$ a^{2} = \frac{-78.2 - \frac{1}{2}}{2.152} = ¿¿¿¿-33.83????$$
+$$ a^{2} = \frac{-78.2 - \frac{1}{2}}{2.152} = -33.83$$
 
 Haciendo los cálculos, podemos observar que la fuerza de la gravedad es de unos **-33.83 m/s<sup>2</sup>** o **-19.9 links/s<sup>2</sup>**, lo cual es un valor muy superior al de la tierra (**9.8 m/s<sup>2</sup>**), esto significa que, en el mundo de The Legend of Zelda: Breath of the Wild, hay mas gravedad que en Júpiter (**24.79 m/s<sup>2</sup>**).
 
@@ -93,7 +93,17 @@ Para analizar que factores físicos tiene en cuenta el videojuego a la hora de r
 
 Para calcular el tiro parabólico, necesitamos saber el **ángulo** en el cual sale disparada la flecha, **cuanto tiempo tarda** en impactar contra el suelo, a **cuanta distancia impacta**.
 
-Para obtener el **ángulo**, **INSERTAR COSA DE MARTRA**
+Para obtener el **ángulo** con el que sale la flecha, hemos cogido la imagen dónde se ve la trayectoria de la flecha con su respectiva parábola y dibujamos un triángulo aproximado para sacar sus ejes y calcular las distancias a partir de los pixeles de largo y alto que ocupan.
+
+Una vez colocados los ejes, cogemos la longitud del eje X y del eje Y, buscamos la tangente:
+
+$$ \tan (\alpha )=\frac{sin(\alpha )}{cos(\alpha )} $$
+
+Y a partir del resultado, buscamos el arcotangente. 
+
+$$ \alpha =\arctan (tan(\alpha )) $$
+
+De esta forma, sacamos de forma aproximada el ángulo de la parábola.
 
 Para saber cuanto **tiempo tarda** en impactar contra el suelo, hemos disparado la flecha y cronometrado cuanto tiempo tarda en impactar el suelo.
 
@@ -203,12 +213,8 @@ Sabiendo la **aceleración**, podemos multiplicarla por la **masa** y así obten
 
 $$ 1097.88 \cdot 65 =  71.82kN $$
 
-
-
-Según la web Petzl España: 
+Según la web **Petzl España**: 
 >Este valor procede de estudios militares sobre paracaidistas: el cuerpo humano de un deportista podría soportar una deceleración máxima de unos 15 G, es decir, 12 kN para una masa de 80 kg.
-
-_¿Cómo se ha determinado la fuerza de choque máxima de 12kN? - Petzl España. (s. f.). https://www.petzl.com/ES/es/Sport/%C2%BFComo-se-ha-determinado-la-fuerza-de-choque-maxima-de-12kN-?ProductName=MAMBO-10-1-mm_
 
 Teniendo en cuenta la piedra no da toda la energía justo cuando choca con la plataforma, sino que es entregada "linealmente" hasta que la tabla toca el suelo, no podemos saber la masa exacta de la piedra, pero podemos determinar la masa mínima, esto lo podemos saber igualando la energía potencial de la piedra con la energía cinética de link, al hacer esto, sacaríamos la masa de la piedra si disipara toda su energía al contactar con la plataforma y no al contactar con el suelo.
 
@@ -252,7 +258,7 @@ Teníamos curiosidad sobre si el juego tenía en cuenta el peso de Link a la hor
 <iframe src="https://www.youtube.com/embed/S1UJQTvV9-w" width="560" height="315" frameborder="0"></iframe>
 </p>
 
-![foto medidas salto](/assets/images/botw/salto.png){: width="560" height="315" }
+![foto medidas salto](/assets/images/botw/salto2.png){: width="560" height="315" }
 _Medidas del salto de Link con armadura_
 
 **MRUA:**
@@ -271,7 +277,23 @@ No podemos calcular la fuerza con la que salta Link, ya que la animación es ins
 <iframe src="https://www.youtube.com/embed/kXUfvma6VYQ" width="560" height="315" frameborder="0"></iframe>
 </p>
 
-![foto medidas salto](/assets/images/botw/salto2.png){: width="560" height="315" }
+![foto medidas salto](/assets/images/botw/salto.png){: width="560" height="315" }
 _Medidas del salto de Link sin armadura_
 
 Podemos observar que el videojuego no tiene en cuenta la masa de Link, ya que salta la misma altura cuando tiene equipada una armadura y sus armas que cuando no las tiene equipada.
+
+# Webgrafía
+
+_¿Cómo se ha determinado la fuerza de choque máxima de 12kN? - Petzl España. (s. f.). https://www.petzl.com/ES/es/Sport/%C2%BFComo-se-ha-determinado-la-fuerza-de-choque-maxima-de-12kN-?ProductName=MAMBO-10-1-mm_
+
+_Pinwheel Popper on. (2019, 15 agosto). Twitter. https://twitter.com/PinwheelPopper/status/1162063176520704001?s=20_
+
+_Metal weapons Conduct electricity. (s. f.). Imgur. Recuperado 23 de diciembre de 2022, de https://imgur.com/miBXgFC_
+
+_Breath of the Wild - Pondo Snowball Bowling Easy Setup for Strikes. (2017, 31 marzo). YouTube. Recuperado 23 de diciembre de 2022, de https://www.youtube.com/watch?v=D3FdJk9vwDA&feature=youtu.be_
+
+_Lic. Marcela Licata - zonadiet.com. (s. f.). Tabla de Peso Ideal en metros y kilogramos. Zonadiet. https://www.zonadiet.com/tablas/pesoideal.cgi_
+
+_Cemu Emulator. (s. f.). https://cemu.info_
+
+_GitHub - etra0/botw-freecam: Freecam for the game Zelda: Breath of the Wild for the Wii U using the Cemu emulator. (s. f.). GitHub. https://github.com/etra0/botw-freecam_
