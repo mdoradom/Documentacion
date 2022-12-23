@@ -1,0 +1,1011 @@
+<!DOCTYPE html><html lang="es-ES" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="generator" content="Jekyll v4.3.1" /><meta property="og:title" content="Navigation" /><meta name="author" content="mdoradom" /><meta property="og:locale" content="es_ES" /><meta name="description" content="Navigation" /><meta property="og:description" content="Navigation" /><link rel="canonical" href="https://mdoradom.github.io/documentacion/posts/navigation/" /><meta property="og:url" content="https://mdoradom.github.io/documentacion/posts/navigation/" /><meta property="og:site_name" content="Documentación" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2022-06-08T07:12:00+02:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="Navigation" /><meta name="twitter:site" content="@mariiiodorado_" /><meta name="twitter:creator" content="@mariiiodorado_" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mdoradom","url":"https://github.com/mdoradom/"},"dateModified":"2022-06-08T16:08:03+02:00","datePublished":"2022-06-08T07:12:00+02:00","description":"Navigation","headline":"Navigation","mainEntityOfPage":{"@type":"WebPage","@id":"https://mdoradom.github.io/documentacion/posts/navigation/"},"url":"https://mdoradom.github.io/documentacion/posts/navigation/"}</script><title>Navigation | Documentación</title><link rel="apple-touch-icon" sizes="180x180" href="/documentacion/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/documentacion/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/documentacion/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/documentacion/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/documentacion/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Documentación"><meta name="application-name" content="Documentación"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/documentacion/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://cdn.jsdelivr.net" ><link rel="dns-prefetch" href="https://cdn.jsdelivr.net" ><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/documentacion/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get MODE_ATTR() { return "data-mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } static get ID() { return "mode-toggle"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } let self = this; /* always follow the system prefers */ this.sysDarkPrefers.addEventListener("change", () => { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.notify(); }); } /* constructor() */ get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode === ModeToggle.DARK_MODE; } get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } setDark() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_ATTR); sessionStorage.removeItem(ModeToggle.MODE_KEY); } /* Notify another plugins that the theme mode has changed */ notify() { window.postMessage({ direction: ModeToggle.ID, message: this.modeStatus }, "*"); } } /* ModeToggle */ const toggle = new ModeToggle(); function flipMode() { if (toggle.hasMode) { if (toggle.isSysDarkPrefer) { if (toggle.isLightMode) { toggle.clearMode(); } else { toggle.setLight(); } } else { if (toggle.isDarkMode) { toggle.clearMode(); } else { toggle.setDark(); } } } else { if (toggle.isSysDarkPrefer) { toggle.setLight(); } else { toggle.setDark(); } } toggle.notify(); } /* flipMode() */ </script><body data-spy="scroll" data-target="#toc" data-topbar-visible="true"><div id="sidebar" class="d-flex flex-column align-items-end"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/documentacion/" class="mx-auto"> <img src="/documentacion/assets/images/icon.jpg" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title"> <a href="/documentacion/">Documentación</a></div><div class="site-subtitle font-italic">Sobre cosas en general</div></div><ul class="w-100"><li class="nav-item"> <a href="/documentacion/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>INICIO</span> </a><li class="nav-item"> <a href="/documentacion/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORÍAS</span> </a><li class="nav-item"> <a href="/documentacion/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>ETIQUETAS</span> </a><li class="nav-item"> <a href="/documentacion/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVO</span> </a><li class="nav-item"> <a href="/documentacion/links/" class="nav-link"> <i class="fa-fw fas fa-link ml-xl-3 mr-xl-3 unloaded"></i> <span>LINKS</span> </a><li class="nav-item"> <a href="/documentacion/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ACERCA DE</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <button class="mode-toggle btn" aria-label="Switch Mode"> <i class="fas fa-adjust"></i> </button> <span class="icon-border"></span> <a href="https://github.com/mdoradom" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/mariiiodorado_" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['mariodoradomartinez','gmail.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/documentacion/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper"><div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4"> <span id="breadcrumb"> <span> <a href="/documentacion/"> Inicio </a> </span> <span>Navigation</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Entrada</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Buscar..."> </span> <span id="search-cancel" >Cancelar</span></div></div><div id="main-wrapper" class="d-flex justify-content-center"><div id="main" class="container pl-xl-4 pr-xl-4"><div class="row"><div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4"><div class="post pl-1 pr-1 pl-md-2 pr-md-2"><h1 data-toc-skip>Navigation</h1><div class="post-meta text-muted"> <span> Publicado <em class="" data-ts="1654665120" data-df="DD/MM/YYYY" data-toggle="tooltip" data-placement="bottom"> 08/06/2022 </em> </span> <span> Actualizado <em class="" data-ts="1654697283" data-df="DD/MM/YYYY" data-toggle="tooltip" data-placement="bottom"> 08/06/2022 </em> </span><div class="d-flex justify-content-between"> <span> Por <em> <a href="https://github.com/mdoradom/">mdoradom</a> </em> </span><div> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="3328 palabras"> <em>18 min</em> de lectura</span></div></div></div><div class="post-content"><h1 id="navigation">Navigation</h1><p>El componente <a href="https://developer.android.com/guide/navigation/navigation-ui">Navigation</a> incluye una clase <code class="language-plaintext highlighter-rouge">NavigationUI</code>. Esta clase contiene métodos estáticos que administran la navegación con el <code class="language-plaintext highlighter-rouge">NavigationView</code>, el <code class="language-plaintext highlighter-rouge">BottomNavigationView</code> y el <code class="language-plaintext highlighter-rouge">OptionsMenu</code>.</p><p><img data-src="https://i.imgur.com/i6i7m7e.png" alt="" data-proofer-ignore></p><p>Además de usar estos elementos de navegación, en esta práctica usaremos también la navegación mediante Tabs (o pestañas), usando los elementos <code class="language-plaintext highlighter-rouge">TabLayout</code> y <code class="language-plaintext highlighter-rouge">ViewPager2</code>, aunque estos no están incluidos en el componente Navigation.</p><p><img data-src="https://i.imgur.com/gI71BNl.png" alt="" data-proofer-ignore></p><p>Desarrollaremos una app que permitirá navegar entre destinos usando todos estos elementos.</p><p><img data-src="https://i.imgur.com/rODYnTj.gif" alt="" data-proofer-ignore></p><p><a href="https://github.com/gerardfp/navigation">https://github.com/gerardfp/navigation</a></p><h2 id="crea-el-proyecto"><span class="mr-2">Crea el proyecto</span><a href="#crea-el-proyecto" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>En el asistente de “Nueva Activity”, Android Studio proporciona plantillas para crear Activities que incluyen estos componentes de navegación. Sin embargo, esta vez lo haremos “desde 0”, para comprender todos los elementos que intervienen.</p><ol><li><p>Selecciona <code class="language-plaintext highlighter-rouge">Empty Activity</code> como plantilla para la MainActivity</p><li><p>Añade las dependencias para incluir el componente Navigation, ViewPager2 y Material:</p><p><code class="language-plaintext highlighter-rouge">build.gradle</code></p><div class="language-java highlighter-rouge"><div class="code-header"> <span data-label-text="Java"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">implementation</span> <span class="err">'</span><span class="n">androidx</span><span class="o">.</span><span class="na">navigation</span><span class="o">:</span><span class="n">navigation</span><span class="o">-</span><span class="nl">fragment:</span><span class="mf">2.3</span><span class="o">.</span><span class="mi">0</span><span class="err">'</span>
+    <span class="n">implementation</span> <span class="err">'</span><span class="n">androidx</span><span class="o">.</span><span class="na">navigation</span><span class="o">:</span><span class="n">navigation</span><span class="o">-</span><span class="nl">ui:</span><span class="mf">2.3</span><span class="o">.</span><span class="mi">0</span><span class="err">'</span>
+    <span class="n">implementation</span> <span class="err">'</span><span class="n">androidx</span><span class="o">.</span><span class="na">viewpager2</span><span class="o">:</span><span class="nl">viewpager2:</span><span class="mf">1.0</span><span class="o">.</span><span class="mi">0</span><span class="err">'</span>
+    <span class="n">implementation</span> <span class="err">'</span><span class="n">com</span><span class="o">.</span><span class="na">google</span><span class="o">.</span><span class="na">android</span><span class="o">.</span><span class="na">material</span><span class="o">:</span><span class="nl">material:</span><span class="mf">1.3</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">alpha03</span><span class="err">'</span>
+<span class="o">}</span>
+</pre></table></code></div></div><li><p>Habilita el ViewBinding:</p><p><code class="language-plaintext highlighter-rouge">build.gradle</code></p><div class="language-java highlighter-rouge"><div class="code-header"> <span data-label-text="Java"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre><span class="n">android</span> <span class="o">{</span>
+    <span class="n">buildFeatures</span> <span class="o">{</span>
+        <span class="n">viewBinding</span> <span class="kc">true</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></table></code></div></div><li><p>Por último, deshabilitaremos la <code class="language-plaintext highlighter-rouge">ActionBar</code> (la barra superior) que se incluye de forma automática en todas las Activities, ya que en este proyecto utilizaremos la versión más reciente <code class="language-plaintext highlighter-rouge">Toolbar</code>, que se integra mejor con los elementos de navegación:</p><p>Añade los siguientes elementos al fichero <strong>styles.xml</strong>:</p><p><code class="language-plaintext highlighter-rouge">res/values/styles.xml</code></p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="nt">&lt;resources&gt;</span>
+    <span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">"AppTheme"</span> <span class="na">parent=</span><span class="s">"Theme.AppCompat.Light.DarkActionBar"</span><span class="nt">&gt;</span>
+        ...
+
+        <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">"windowActionBar"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">"windowNoTitle"</span><span class="nt">&gt;</span>true<span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/resources&gt;</span>
+</pre></table></code></div></div><p>Para más info sobre la actualización de la <code class="language-plaintext highlighter-rouge">ActionBar</code> por la <code class="language-plaintext highlighter-rouge">Toolbar</code>, consulta: <a href="https://developer.android.com/training/appbar/setting-up">Cómo configurar la barra de la app</a></p></ol><h2 id="activities"><span class="mr-2">Activities</span><a href="#activities" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>Cada uno de elementos de navegación (<code class="language-plaintext highlighter-rouge">NavigationView</code>, <code class="language-plaintext highlighter-rouge">BottomNavigationView</code>, <code class="language-plaintext highlighter-rouge">OptionsMenu</code> y <code class="language-plaintext highlighter-rouge">TabLayout</code> + <code class="language-plaintext highlighter-rouge">ViewPager2</code>) lo implementaremos en una <code class="language-plaintext highlighter-rouge">Activity</code> diferente y usaremos la <code class="language-plaintext highlighter-rouge">MainActivity</code> para lanzar las diferentes Activities.</p><p><img data-src="https://i.imgur.com/6eapptv.png" alt="" data-proofer-ignore></p><p>Empezaremos creando estas Activities, con los nombres: <code class="language-plaintext highlighter-rouge">DrawerActivity</code>, <code class="language-plaintext highlighter-rouge">BottomActivity</code>, <code class="language-plaintext highlighter-rouge">OptionsActivity</code> y <code class="language-plaintext highlighter-rouge">TabbedActivity</code>.</p><p>Para crear una Activity selcciona <code class="language-plaintext highlighter-rouge">New &gt; Activity &gt; Empty &gt; Activity</code></p><p><img data-src="https://i.imgur.com/lJaLIbO.png" alt="" data-proofer-ignore></p><p>Observa que cuando creas una Activity con el asistente, e introduces un nombre como AbcActivity, automáticamente se crea un archivo AbcActivity.java para la clase, y otro activity_abc.xml para el layout.</p><p>También se crea una entrada para la activity en el elemento <application> del fichero AndroidManifest.</application></p><h3 id="toolbar"><span class="mr-2">Toolbar</span><a href="#toolbar" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Ahora el siguinte paso será añadir una <code class="language-plaintext highlighter-rouge">Toolbar</code> en cada una de estas activities.</p><p>La <code class="language-plaintext highlighter-rouge">Toolbar</code> se utilitza conjuntamente con el <code class="language-plaintext highlighter-rouge">CoordinatorLayout</code> y el <code class="language-plaintext highlighter-rouge">AppBarLayout</code> que permiten utilizar transiciones y animaciones (por ejemplo una Collapsing Toolbar). Aunque en esta práctica no las haremos, mejor si la usamos desde el principio.</p><p>Sustituye el layout de cada una de las 5 activities por este layout:</p><p><code class="language-plaintext highlighter-rouge">res/layout/activity_$$$.xml</code></p><div class="language-java highlighter-rouge"><div class="code-header"> <span data-label-text="Java"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+</pre><td class="rouge-code"><pre><span class="o">&lt;?</span><span class="n">xml</span> <span class="n">version</span><span class="o">=</span><span class="s">"1.0"</span> <span class="n">encoding</span><span class="o">=</span><span class="s">"utf-8"</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="n">androidx</span><span class="o">.</span><span class="na">coordinatorlayout</span><span class="o">.</span><span class="na">widget</span><span class="o">.</span><span class="na">CoordinatorLayout</span>
+    <span class="nl">xmlns:</span><span class="n">android</span><span class="o">=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+    <span class="nl">xmlns:</span><span class="n">app</span><span class="o">=</span><span class="s">"http://schemas.android.com/apk/res-auto"</span>
+    <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">"match_parent"</span>
+    <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">"match_parent"</span><span class="o">&gt;</span>
+
+    <span class="o">&lt;</span><span class="n">com</span><span class="o">.</span><span class="na">google</span><span class="o">.</span><span class="na">android</span><span class="o">.</span><span class="na">material</span><span class="o">.</span><span class="na">appbar</span><span class="o">.</span><span class="na">AppBarLayout</span>
+        <span class="nl">android:</span><span class="n">id</span><span class="o">=</span><span class="s">"@+id/appBarLayout"</span>
+        <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">"match_parent"</span>
+        <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">"wrap_content"</span>
+        <span class="nl">android:</span><span class="n">theme</span><span class="o">=</span><span class="s">"@style/ThemeOverlay.AppCompat.Dark.ActionBar"</span><span class="o">&gt;</span>
+
+        <span class="o">&lt;</span><span class="n">androidx</span><span class="o">.</span><span class="na">appcompat</span><span class="o">.</span><span class="na">widget</span><span class="o">.</span><span class="na">Toolbar</span>
+            <span class="nl">android:</span><span class="n">id</span><span class="o">=</span><span class="s">"@+id/toolbar"</span>
+            <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">"match_parent"</span>
+            <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">"?attr/actionBarSize"</span>
+            <span class="nl">android:</span><span class="n">background</span><span class="o">=</span><span class="s">"?attr/colorPrimary"</span>
+            <span class="nl">app:</span><span class="n">popupTheme</span><span class="o">=</span><span class="s">"@style/ThemeOverlay.AppCompat.Light"</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;/</span><span class="n">com</span><span class="o">.</span><span class="na">google</span><span class="o">.</span><span class="na">android</span><span class="o">.</span><span class="na">material</span><span class="o">.</span><span class="na">appbar</span><span class="o">.</span><span class="na">AppBarLayout</span><span class="o">&gt;</span>
+
+    <span class="o">&lt;</span><span class="n">androidx</span><span class="o">.</span><span class="na">constraintlayout</span><span class="o">.</span><span class="na">widget</span><span class="o">.</span><span class="na">ConstraintLayout</span>
+        <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">"match_parent"</span>
+        <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">"match_parent"</span>
+        <span class="nl">app:</span><span class="n">layout_behavior</span><span class="o">=</span><span class="s">"@string/appbar_scrolling_view_behavior"</span><span class="o">&gt;</span>
+
+        <span class="o">&lt;!--</span> <span class="nc">Aqui</span> <span class="n">va</span> <span class="n">el</span> <span class="n">contenido</span> <span class="n">de</span> <span class="n">la</span> <span class="n">activity</span> <span class="o">--&gt;</span>
+
+    <span class="o">&lt;/</span><span class="n">androidx</span><span class="o">.</span><span class="na">constraintlayout</span><span class="o">.</span><span class="na">widget</span><span class="o">.</span><span class="na">ConstraintLayout</span><span class="o">&gt;</span>
+
+<span class="o">&lt;/</span><span class="n">androidx</span><span class="o">.</span><span class="na">coordinatorlayout</span><span class="o">.</span><span class="na">widget</span><span class="o">.</span><span class="na">CoordinatorLayout</span><span class="o">&gt;</span>
+</pre></table></code></div></div><h3 id="mainactivity"><span class="mr-2">MainActivity</span><a href="#mainactivity" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>El siguiente paso es añadir 4 botones en la <code class="language-plaintext highlighter-rouge">MainActivity</code> para que cada uno nos lleve a una de las otras Activities.</p><p>En el <code class="language-plaintext highlighter-rouge">&lt;ConstraintLayout&gt;</code> de la <code class="language-plaintext highlighter-rouge">activity_main.xml</code> añade los 4 botones:</p><p><code class="language-plaintext highlighter-rouge">res/layout/activity_main.xml</code></p><div class="language-java highlighter-rouge"><div class="code-header"> <span data-label-text="Java"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+</pre><td class="rouge-code"><pre><span class="o">&lt;</span><span class="n">androidx</span><span class="o">.</span><span class="na">constraintlayout</span><span class="o">.</span><span class="na">widget</span><span class="o">.</span><span class="na">ConstraintLayout</span>
+    <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">"match_parent"</span>
+    <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">"match_parent"</span><span class="o">&gt;</span>
+
+    <span class="o">&lt;</span><span class="nc">Button</span>
+        <span class="nl">android:</span><span class="n">id</span><span class="o">=</span><span class="s">"@+id/action_goto_drawerActivity"</span>
+        <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">"wrap_content"</span>
+        <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">"wrap_content"</span>
+        <span class="nl">android:</span><span class="n">text</span><span class="o">=</span><span class="s">"Drawer"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintBottom_toTopOf</span><span class="o">=</span><span class="s">"@id/action_goto_bottomActivity"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintLeft_toLeftOf</span><span class="o">=</span><span class="s">"parent"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintRight_toRightOf</span><span class="o">=</span><span class="s">"parent"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintTop_toTopOf</span><span class="o">=</span><span class="s">"parent"</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="nc">Button</span>
+        <span class="nl">android:</span><span class="n">id</span><span class="o">=</span><span class="s">"@+id/action_goto_bottomActivity"</span>
+        <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">"wrap_content"</span>
+        <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">"wrap_content"</span>
+        <span class="nl">android:</span><span class="n">text</span><span class="o">=</span><span class="s">"Bottom"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintBottom_toTopOf</span><span class="o">=</span><span class="s">"@id/action_goto_optionsActivity"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintLeft_toLeftOf</span><span class="o">=</span><span class="s">"parent"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintRight_toRightOf</span><span class="o">=</span><span class="s">"parent"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintTop_toBottomOf</span><span class="o">=</span><span class="s">"@id/action_goto_drawerActivity"</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="nc">Button</span>
+        <span class="nl">android:</span><span class="n">id</span><span class="o">=</span><span class="s">"@+id/action_goto_optionsActivity"</span>
+        <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">"wrap_content"</span>
+        <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">"wrap_content"</span>
+        <span class="nl">android:</span><span class="n">text</span><span class="o">=</span><span class="s">"Options"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintBottom_toTopOf</span><span class="o">=</span><span class="s">"@id/action_goto_tabbedActivity"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintLeft_toLeftOf</span><span class="o">=</span><span class="s">"parent"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintRight_toRightOf</span><span class="o">=</span><span class="s">"parent"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintTop_toBottomOf</span><span class="o">=</span><span class="s">"@id/action_goto_bottomActivity"</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="nc">Button</span>
+        <span class="nl">android:</span><span class="n">id</span><span class="o">=</span><span class="s">"@+id/action_goto_tabbedActivity"</span>
+        <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">"wrap_content"</span>
+        <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">"wrap_content"</span>
+        <span class="nl">android:</span><span class="n">text</span><span class="o">=</span><span class="s">"Tabs"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintBottom_toBottomOf</span><span class="o">=</span><span class="s">"parent"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintLeft_toLeftOf</span><span class="o">=</span><span class="s">"parent"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintRight_toRightOf</span><span class="o">=</span><span class="s">"parent"</span>
+        <span class="nl">app:</span><span class="n">layout_constraintTop_toBottomOf</span><span class="o">=</span><span class="s">"@id/action_goto_optionsActivity"</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;/</span><span class="n">androidx</span><span class="o">.</span><span class="na">constraintlayout</span><span class="o">.</span><span class="na">widget</span><span class="o">.</span><span class="na">ConstraintLayout</span><span class="o">&gt;</span>
+</pre></table></code></div></div><p>Ahora implementamos el comportamiento del evento clic, añadiendo un <code class="language-plaintext highlighter-rouge">OnClickListener</code> en cada botón, de manera que cuando se haga clic en un botón se iniciará la activity correspondiente.</p><p>Para iniciar una Activity hay que llamar al método <code class="language-plaintext highlighter-rouge">startActivity()</code> y pasarle un objeto de clase <code class="language-plaintext highlighter-rouge">Intent</code>, indicando en los parámetros del constructor el objeto de la Activity en la que estamos y la <strong>clase</strong> de la Activity que queremos iniciar.</p><p>Reemplaza el código de la clase MainActivity por este (¡excepto la primera linea del <code class="language-plaintext highlighter-rouge">package</code>!). Usa <strong>Alt + Intro</strong> para importar la clase de viewbinding:</p><p><code class="language-plaintext highlighter-rouge">MainActivity.java</code></p><div class="language-java highlighter-rouge"><div class="code-header"> <span data-label-text="Java"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+</pre><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">android.content.Intent</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.View</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="nc">AppCompatActivity</span> <span class="o">{</span>
+
+    <span class="nc">ActivityMainBinding</span> <span class="n">binding</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+        <span class="n">setContentView</span><span class="o">((</span><span class="n">binding</span> <span class="o">=</span> <span class="nc">ActivityMainBinding</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">getLayoutInflater</span><span class="o">())).</span><span class="na">getRoot</span><span class="o">());</span>
+
+        <span class="n">setSupportActionBar</span><span class="o">(</span><span class="n">binding</span><span class="o">.</span><span class="na">toolbar</span><span class="o">);</span>
+
+        <span class="n">binding</span><span class="o">.</span><span class="na">actionGotoDrawerActivity</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="nc">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="nc">Intent</span><span class="o">(</span><span class="nc">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="nc">DrawerActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="n">binding</span><span class="o">.</span><span class="na">actionGotoBottomActivity</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="nc">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="nc">Intent</span><span class="o">(</span><span class="nc">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="nc">BottomActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="n">binding</span><span class="o">.</span><span class="na">actionGotoOptionsActivity</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="nc">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="nc">Intent</span><span class="o">(</span><span class="nc">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="nc">OptionsActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="n">binding</span><span class="o">.</span><span class="na">actionGotoTabbedActivity</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="nc">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="nc">Intent</span><span class="o">(</span><span class="nc">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="nc">TabbedActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></table></code></div></div><p>La llamada a <code class="language-plaintext highlighter-rouge">setSupportActionBar()</code> hace que la Activity utilice la <code class="language-plaintext highlighter-rouge">Toolbar</code> que hemos puesto en el layout, en lugar de la <code class="language-plaintext highlighter-rouge">ActionBar</code> que venia por defecto, y que hemos ocultado.</p><p>Observa que el primer parámetro del <code class="language-plaintext highlighter-rouge">Intent</code> siempre es <code class="language-plaintext highlighter-rouge">MainActivity.this</code>, es decir, el objeto correspondiente a la <code class="language-plaintext highlighter-rouge">MainActivity</code> (la activity en la que estamos). En cambio el segundo parámetro es la clase <code class="language-plaintext highlighter-rouge">.class</code> de la activity que queremos iniciar en cada botón.</p><p>Si ejecutas ahora la app, comprobarás que cada botón nos lleva a una Activity, que todavía está en blanco. En los siguientes pasos, implementaremos la navegación usando un menú diferente para cada una de estas activities.</p><h2 id="navigationview"><span class="mr-2">NavigationView</span><a href="#navigationview" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>El NavigationView (más conocido como “<strong>Drawer</strong> menu”) es el menú de navegación que suele aparecer por la izquierda de la app cuando se pulsa el icono Hamburger</p><p><img data-src="https://i.imgur.com/jAjWSt5.png" alt="" data-proofer-ignore></p><p>En la <code class="language-plaintext highlighter-rouge">DrawerActivity</code> de esta app usaremos un <code class="language-plaintext highlighter-rouge">NavigationView</code> para navegar a 3 destinos (fragments).</p><p><img data-src="https://i.imgur.com/VafzdsM.png" alt="" data-proofer-ignore></p><p>Empezamos creando el Grafo de Navegación, al que llamaremos <code class="language-plaintext highlighter-rouge">drawer_graph.xml</code>. En él añadimos los 3 destinos. Para tener presente que estos destinos serán accesibles desde el Drawer, les llamaremos: <code class="language-plaintext highlighter-rouge">Drawer1Fragment</code>, <code class="language-plaintext highlighter-rouge">Drawer2Fragment</code>, <code class="language-plaintext highlighter-rouge">Drawer3Fragment</code>.</p><p>Crea el grafo <code class="language-plaintext highlighter-rouge">drawer_graph.xml</code> y añade los 3 destinos:</p><p><img data-src="https://i.imgur.com/7Xz8tH1.png" alt="" data-proofer-ignore></p><p>En este grafo de navegación no hemos creado ninguna acción de navegación, ya que los 3 destinos son independientes ente sí, es decir, no se navega de ninguno a otro, sino que todos son accesibles desde el menú drawer.</p><p>El siguiente paso lógico debería ser añadir el <code class="language-plaintext highlighter-rouge">NavHostFragment</code> en el layout <code class="language-plaintext highlighter-rouge">activity_drawer.xml</code>, pero no lo hacemos ahora ya que en el siguiente paso hay que volver a modificar el layout.</p><h3 id="añadir-el-navigationview"><span class="mr-2">Añadir el NavigationView</span><a href="#añadir-el-navigationview" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Android proporciona el <code class="language-plaintext highlighter-rouge">DrawerLayout</code> para ser utilizado con el <code class="language-plaintext highlighter-rouge">NavigationView</code>. Su única función es permitir que el <code class="language-plaintext highlighter-rouge">NavigationView</code> pueda ponerse “por encima” de los otros elementos.</p><p>Añadiremos el <code class="language-plaintext highlighter-rouge">NavigationView</code> a la <code class="language-plaintext highlighter-rouge">DrawerActivity</code>. Reemplaza el contenido del fichero <code class="language-plaintext highlighter-rouge">res/layout/activity_drawer.xml</code> por este:</p><p><code class="language-plaintext highlighter-rouge">res/layout/activity_drawer.xml</code></p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;androidx.drawerlayout.widget.DrawerLayout</span>
+    <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+    <span class="na">xmlns:app=</span><span class="s">"http://schemas.android.com/apk/res-auto"</span>
+    <span class="na">android:id=</span><span class="s">"@+id/drawer_layout"</span>
+    <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+    <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+    <span class="na">android:fitsSystemWindows=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;androidx.coordinatorlayout.widget.CoordinatorLayout</span>
+        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"match_parent"</span><span class="nt">&gt;</span>
+
+        <span class="nt">&lt;com.google.android.material.appbar.AppBarLayout</span>
+            <span class="na">android:id=</span><span class="s">"@+id/appBarLayout"</span>
+            <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+            <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+            <span class="na">android:theme=</span><span class="s">"@style/ThemeOverlay.AppCompat.Dark.ActionBar"</span><span class="nt">&gt;</span>
+
+            <span class="nt">&lt;androidx.appcompat.widget.Toolbar</span>
+                <span class="na">android:id=</span><span class="s">"@+id/toolbar"</span>
+                <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+                <span class="na">android:layout_height=</span><span class="s">"?attr/actionBarSize"</span>
+                <span class="na">android:background=</span><span class="s">"?attr/colorPrimary"</span>
+                <span class="na">app:popupTheme=</span><span class="s">"@style/ThemeOverlay.AppCompat.Light"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/com.google.android.material.appbar.AppBarLayout&gt;</span>
+
+        <span class="nt">&lt;androidx.constraintlayout.widget.ConstraintLayout</span>
+            <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+            <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+            <span class="na">app:layout_behavior=</span><span class="s">"@string/appbar_scrolling_view_behavior"</span><span class="nt">&gt;</span>
+
+            <span class="nt">&lt;androidx.fragment.app.FragmentContainerView</span>
+                <span class="na">android:name=</span><span class="s">"androidx.navigation.fragment.NavHostFragment"</span>
+                <span class="na">android:id=</span><span class="s">"@+id/nav_host_fragment"</span>
+                <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+                <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+                <span class="na">app:defaultNavHost=</span><span class="s">"true"</span>
+                <span class="na">app:navGraph=</span><span class="s">"@navigation/drawer_graph"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+
+    <span class="nt">&lt;/androidx.coordinatorlayout.widget.CoordinatorLayout&gt;</span>
+
+    <span class="nt">&lt;com.google.android.material.navigation.NavigationView</span>
+        <span class="na">android:id=</span><span class="s">"@+id/nav_view"</span>
+        <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+        <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_gravity=</span><span class="s">"start"</span>
+        <span class="na">android:fitsSystemWindows=</span><span class="s">"true"</span>
+        <span class="na">app:headerLayout=</span><span class="s">"@layout/drawer_header"</span>
+        <span class="na">app:menu=</span><span class="s">"@menu/drawer_menu"</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/androidx.drawerlayout.widget.DrawerLayout&gt;</span>
+</pre></table></code></div></div><p>Observa que dentro del <code class="language-plaintext highlighter-rouge">DrawerLayout</code> hemos puesto el <code class="language-plaintext highlighter-rouge">CoordinatorLayout</code> que ya teníamos y el <code class="language-plaintext highlighter-rouge">NavigationView</code>.</p><p>Además hemos añadido el <code class="language-plaintext highlighter-rouge">NavHostFragment</code> que nos habíamos saltado antes. En él es donde se mostrarán los 3 destinos que hemos creado en el grafo <code class="language-plaintext highlighter-rouge">drawer_graph.xml</code>.</p><h3 id="cabecera-y-menú"><span class="mr-2">Cabecera y menú</span><a href="#cabecera-y-menú" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Observa que hay dos atributos XML en el elemento <code class="language-plaintext highlighter-rouge">NavigationView</code> que aparecen en rojo. Estos son el <code class="language-plaintext highlighter-rouge">app:headerLayout</code> y el <code class="language-plaintext highlighter-rouge">app:menu</code>. Estos dos atributos definen los ficheros en que se encuentran el layout de la cabecera y los ítems del menú:</p><p><img data-src="https://i.imgur.com/JOCQOVX.png" alt="" data-proofer-ignore></p><p>Crearemos estos dos ficheros, y definiremos la cabecera y el menú:</p><ul><li><p>Cabecera: Haz clic-derecho sobre la carpeta <code class="language-plaintext highlighter-rouge">res/layout</code> y ve a <strong>New &gt; Layout Resource File</strong></p><p>Introduce <strong>File name</strong>: <code class="language-plaintext highlighter-rouge">drawer_header</code></p><p><img data-src="https://i.imgur.com/KoP1cNH.png" alt="" data-proofer-ignore></p><p>En el layout de la cabecera añadiremos una imagen y un texto:</p><p><img data-src="https://i.imgur.com/cC012sQ.png" alt="" data-proofer-ignore></p><p><code class="language-plaintext highlighter-rouge">res/layout/drawer_header.xml</code></p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;LinearLayout</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+    <span class="na">xmlns:app=</span><span class="s">"http://schemas.android.com/apk/res-auto"</span>
+    <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:background=</span><span class="s">"#009688"</span>
+    <span class="na">android:gravity=</span><span class="s">"center"</span>
+    <span class="na">android:orientation=</span><span class="s">"vertical"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;ImageView</span>
+        <span class="na">android:id=</span><span class="s">"@+id/imageView"</span>
+        <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+        <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+        <span class="na">android:paddingTop=</span><span class="s">"48dp"</span>
+        <span class="na">app:srcCompat=</span><span class="s">"@mipmap/ic_launcher_round"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;TextView</span>
+        <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+        <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+        <span class="na">android:paddingTop=</span><span class="s">"8dp"</span>
+        <span class="na">android:text=</span><span class="s">"Android is HARD"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/LinearLayout&gt;</span>
+</pre></table></code></div></div><li><p>Menu: Haz clic-derecho sobre la carpeta <strong>res</strong> y ve a <code class="language-plaintext highlighter-rouge">New &gt; Android Resource File</code></p><p>Introduce <strong>File name</strong>: <code class="language-plaintext highlighter-rouge">drawer_menu</code>,</p><p>Selecciona <strong>Resource type</strong>: <code class="language-plaintext highlighter-rouge">Menu</code>.</p><p><img data-src="https://i.imgur.com/SXpW2Pv.png" alt="" data-proofer-ignore></p><p>Añadiremos 3 ítems al menú, que navegarán a los destinos correspondientes.</p><p>Para conectar los ítems con los destinos hay que hacer <strong>coincidir los <code class="language-plaintext highlighter-rouge">id</code></strong> de los ítems con los que tienen los fragments en el grafo de navegación (<code class="language-plaintext highlighter-rouge">drawer_graph.xml</code>).</p><p><code class="language-plaintext highlighter-rouge">res/menu/drawer_menu.xml</code></p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;menu</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;item</span>
+        <span class="na">android:id=</span><span class="s">"@+id/drawer1Fragment"</span>
+        <span class="na">android:icon=</span><span class="s">"@android:drawable/ic_menu_directions"</span>
+        <span class="na">android:title=</span><span class="s">"Drawer 1"</span> <span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;item</span>
+        <span class="na">android:id=</span><span class="s">"@+id/drawer2Fragment"</span>
+        <span class="na">android:icon=</span><span class="s">"@android:drawable/ic_menu_directions"</span>
+        <span class="na">android:title=</span><span class="s">"Drawer 2"</span> <span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;item</span>
+        <span class="na">android:id=</span><span class="s">"@+id/drawer3Fragment"</span>
+        <span class="na">android:icon=</span><span class="s">"@android:drawable/ic_menu_directions"</span>
+        <span class="na">android:title=</span><span class="s">"Drawer 3"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/menu&gt;</span>
+</pre></table></code></div></div><p>Establecemos el valor de los atributos <code class="language-plaintext highlighter-rouge">android:icon</code> y <code class="language-plaintext highlighter-rouge">android:title</code> que deseemos.</p></ul><h3 id="navigationui"><span class="mr-2">NavigationUI</span><a href="#navigationui" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>La clase <code class="language-plaintext highlighter-rouge">NavigationUI</code>, es la encargada de administrar la navegación. Cuando se haga clic en un ítem del menú, se encargará de:</p><ol><li><p>resaltar el ítem seleccionado en el menú</p><li><p>cambiar el título en la <code class="language-plaintext highlighter-rouge">Toolbar</code></p><li><p>mostrar el destino (<em>fragment</em>) seleccionado en el <code class="language-plaintext highlighter-rouge">NavHostFragment</code></p><li><p>gestionar el icono hamburguer (mostrando el</p><p><img data-src="https://i.imgur.com/jAjWSt5.png" alt="" data-proofer-ignore></p><p>o la flecha atrás</p><p><img data-src="https://i.imgur.com/XooPU9f.png" alt="" data-proofer-ignore></p><p>)</p></ol><p>Para activar y configurar <code class="language-plaintext highlighter-rouge">NavigationUI</code>, hay que llamar a una serie de métodos estáticos.</p><p>Llamaremos a estos métodos desde la <code class="language-plaintext highlighter-rouge">DrawerActivity</code>, ya que en ella hemos puesto el <code class="language-plaintext highlighter-rouge">NavigationView</code>, la <code class="language-plaintext highlighter-rouge">Toolbar</code> y el <code class="language-plaintext highlighter-rouge">NavHostFragment</code>.</p><p>El código de la <code class="language-plaintext highlighter-rouge">DrawerActivity</code> debe quedar así:</p><p><code class="language-plaintext highlighter-rouge">DrawerActivity.java</code></p><div class="language-java highlighter-rouge"><div class="code-header"> <span data-label-text="Java"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.navigation.NavController</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.navigation.fragment.NavHostFragment</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.navigation.ui.AppBarConfiguration</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.navigation.ui.NavigationUI</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">DrawerActivity</span> <span class="kd">extends</span> <span class="nc">AppCompatActivity</span> <span class="o">{</span>
+
+    <span class="nc">ActivityDrawerBinding</span> <span class="n">binding</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+        <span class="n">setContentView</span><span class="o">((</span><span class="n">binding</span> <span class="o">=</span> <span class="nc">ActivityDrawerBinding</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">getLayoutInflater</span><span class="o">())).</span><span class="na">getRoot</span><span class="o">());</span>
+
+        <span class="n">setSupportActionBar</span><span class="o">(</span><span class="n">binding</span><span class="o">.</span><span class="na">toolbar</span><span class="o">);</span>
+
+        <span class="nc">AppBarConfiguration</span> <span class="n">appBarConfiguration</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AppBarConfiguration</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span>
+                <span class="c1">// Top-level destinations:</span>
+                <span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">drawer1Fragment</span><span class="o">,</span> <span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">drawer2Fragment</span>
+        <span class="o">)</span>
+                <span class="o">.</span><span class="na">setOpenableLayout</span><span class="o">(</span><span class="n">binding</span><span class="o">.</span><span class="na">drawerLayout</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+
+        <span class="nc">NavController</span> <span class="n">navController</span> <span class="o">=</span> <span class="o">((</span><span class="nc">NavHostFragment</span><span class="o">)</span> <span class="n">getSupportFragmentManager</span><span class="o">().</span><span class="na">findFragmentById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">nav_host_fragment</span><span class="o">)).</span><span class="na">getNavController</span><span class="o">();</span>
+        <span class="nc">NavigationUI</span><span class="o">.</span><span class="na">setupWithNavController</span><span class="o">(</span><span class="n">binding</span><span class="o">.</span><span class="na">navView</span><span class="o">,</span> <span class="n">navController</span><span class="o">);</span>
+        <span class="nc">NavigationUI</span><span class="o">.</span><span class="na">setupWithNavController</span><span class="o">(</span><span class="n">binding</span><span class="o">.</span><span class="na">toolbar</span><span class="o">,</span> <span class="n">navController</span><span class="o">,</span> <span class="n">appBarConfiguration</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></table></code></div></div><p>Hay 2 cosas que obsevar en este código:</p><ul><li>La función del objeto <code class="language-plaintext highlighter-rouge">appBarConfiguration</code> es definir los destinos que serán <strong>Top-level destinations</strong>. Si marcamos un destino como Top-level, cuando se navegue a él, se mostrará el icono <em>hamb</em></ul><p><img data-src="https://i.imgur.com/jAjWSt5.png" alt="" data-proofer-ignore></p><p>en la Toolbar. En los destinos que <strong>no</strong> los pongamos como Top-level, se mostrará la flecha de “atrás”</p><p><img data-src="https://i.imgur.com/XooPU9f.png" alt="" data-proofer-ignore>.</p><ul><li>Las llamadas al método estático <code class="language-plaintext highlighter-rouge">setupWithNavController()</code> són las que habilitan a <code class="language-plaintext highlighter-rouge">NavigationUI</code> a administrar la navegación, sincronizando el menu <code class="language-plaintext highlighter-rouge">NavigationView</code> y la barra superior <code class="language-plaintext highlighter-rouge">Tooblar</code>, con los destinos a los que se navega.</ul><p>Ahora puedes ejecutar la app, abrir la <code class="language-plaintext highlighter-rouge">DrawerActivity</code>, y navegar usando el <code class="language-plaintext highlighter-rouge">NaviagtionView</code> por los 3 destinos: <code class="language-plaintext highlighter-rouge">Drawer1Fragment</code>, <code class="language-plaintext highlighter-rouge">Drawer2Fragment</code> y <code class="language-plaintext highlighter-rouge">Drawer3Fragment</code>. Observa cómo en el tercer fragment, se muestra la flecha de “atrás”</p><p><img data-src="https://i.imgur.com/XooPU9f.png" alt="" data-proofer-ignore></p><p>, ya que no es un destino Top-level.</p><h2 id="bottomnavigationview"><span class="mr-2">BottomNavigationView</span><a href="#bottomnavigationview" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>El <code class="language-plaintext highlighter-rouge">BottomNavigationView</code> es la barra de menú que se muestra en la parte inferior de la pantalla.</p><p><img data-src="https://i.imgur.com/R3S0Vfd.png" alt="" data-proofer-ignore></p><p>Añadiremos este menú en la <code class="language-plaintext highlighter-rouge">BottomActiviy</code> para navegar a 3 destinos.</p><p>Creamos el grafo de navegación <code class="language-plaintext highlighter-rouge">bottom_graph.xml</code>, y añadimos tres destinos a los que llamaremos <code class="language-plaintext highlighter-rouge">Bottom1Fragment</code>, <code class="language-plaintext highlighter-rouge">Bottom2Fragment</code> y <code class="language-plaintext highlighter-rouge">Bottom3Fragment</code>:</p><p><img data-src="https://i.imgur.com/rc3kOSp.png" alt="" data-proofer-ignore></p><p>Añadimos el <code class="language-plaintext highlighter-rouge">NavHostFragment</code> en el layout de la <code class="language-plaintext highlighter-rouge">BottomActivity</code>. En él se mostrarán los destinos según se vaya navegando.</p><p>Añade el <code class="language-plaintext highlighter-rouge">NavHostFragment</code> dentro del <code class="language-plaintext highlighter-rouge">ConstraintLayout</code>:</p><p><code class="language-plaintext highlighter-rouge">res/layout/activity_bottom.xml</code></p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre><span class="nt">&lt;androidx.constraintlayout.widget.ConstraintLayout</span> <span class="err">...</span> <span class="nt">&gt;</span>
+
+    <span class="nt">&lt;androidx.fragment.app.FragmentContainerView</span>
+        <span class="na">android:name=</span><span class="s">"androidx.navigation.fragment.NavHostFragment"</span>
+        <span class="na">android:id=</span><span class="s">"@+id/nav_host_fragment"</span>
+        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+        <span class="na">app:defaultNavHost=</span><span class="s">"true"</span>
+        <span class="na">app:navGraph=</span><span class="s">"@navigation/bottom_graph"</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+</pre></table></code></div></div><p>Observa que hemos enlazado el <code class="language-plaintext highlighter-rouge">NavHostFragment</code> con el grafo <code class="language-plaintext highlighter-rouge">bottom_graph</code>.</p><h3 id="añadir-el-bottomnavigationview-al-layout"><span class="mr-2">Añadir el BottomNavigationView al layout</span><a href="#añadir-el-bottomnavigationview-al-layout" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Añade el elemento <code class="language-plaintext highlighter-rouge">&lt;BottomNavigationView&gt;</code> al layout de la <code class="language-plaintext highlighter-rouge">BottomActivity</code>. Colócalo dentro del <code class="language-plaintext highlighter-rouge">ConstraintLayout</code>, justo debajo del <code class="language-plaintext highlighter-rouge">NavHostFragment</code>:</p><p><code class="language-plaintext highlighter-rouge">res/layout/activity_bottom.xml</code></p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre><td class="rouge-code"><pre><span class="nt">&lt;androidx.constraintlayout.widget.ConstraintLayout</span> <span class="err">...</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;androidx.fragment.app.FragmentContainerView</span> <span class="err">...</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;com.google.android.material.bottomnavigation.BottomNavigationView</span>
+        <span class="na">android:id=</span><span class="s">"@+id/bottom_nav_view"</span>
+        <span class="na">android:layout_width=</span><span class="s">"0dp"</span>
+        <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+        <span class="na">android:background=</span><span class="s">"?android:attr/windowBackground"</span>
+        <span class="na">app:layout_constraintBottom_toBottomOf=</span><span class="s">"parent"</span>
+        <span class="na">app:layout_constraintLeft_toLeftOf=</span><span class="s">"parent"</span>
+        <span class="na">app:layout_constraintRight_toRightOf=</span><span class="s">"parent"</span>
+        <span class="na">app:menu=</span><span class="s">"@menu/bottom_menu"</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+</pre></table></code></div></div><h3 id="menu"><span class="mr-2">Menu</span><a href="#menu" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Crea el archivo de menú para el <code class="language-plaintext highlighter-rouge">BottomNavigationView</code> (<code class="language-plaintext highlighter-rouge">res/menu/bottom_menu.xml</code>):</p><p><img data-src="https://i.imgur.com/H16H3Lx.png" alt="" data-proofer-ignore></p><p>Añade los 3 ítems al menú (<strong>el id del item debe coincidir con el id del destino</strong>):</p><p><code class="language-plaintext highlighter-rouge">res/menu/bottom_menu.xml</code></p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;menu</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;item</span>
+        <span class="na">android:id=</span><span class="s">"@+id/bottom1Fragment"</span>
+        <span class="na">android:icon=</span><span class="s">"@android:drawable/ic_menu_directions"</span>
+        <span class="na">android:title=</span><span class="s">"Bottom 1"</span> <span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;item</span>
+        <span class="na">android:id=</span><span class="s">"@+id/bottom2Fragment"</span>
+        <span class="na">android:icon=</span><span class="s">"@android:drawable/ic_menu_directions"</span>
+        <span class="na">android:title=</span><span class="s">"Bottom 2"</span> <span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;item</span>
+        <span class="na">android:id=</span><span class="s">"@+id/bottom3Fragment"</span>
+        <span class="na">android:icon=</span><span class="s">"@android:drawable/ic_menu_directions"</span>
+        <span class="na">android:title=</span><span class="s">"Bottom 3"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/menu&gt;</span>
+</pre></table></code></div></div><h3 id="navigationui-1"><span class="mr-2">NavigationUI</span><a href="#navigationui-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Ahora configuraremos <code class="language-plaintext highlighter-rouge">NavigationUI</code> en la <code class="language-plaintext highlighter-rouge">BottomActivity</code>, para que administre la navegación del <code class="language-plaintext highlighter-rouge">BottomNavigationView</code>, y sincronice los títulos en la <code class="language-plaintext highlighter-rouge">Toolbar</code>.</p><p>El código de la <code class="language-plaintext highlighter-rouge">BottomActivity</code> debe quedar así:</p><p><code class="language-plaintext highlighter-rouge">BottomActivity.java</code></p><div class="language-java highlighter-rouge"><div class="code-header"> <span data-label-text="Java"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.navigation.NavController</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.navigation.fragment.NavHostFragment</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.navigation.ui.NavigationUI</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">BottomActivity</span> <span class="kd">extends</span> <span class="nc">AppCompatActivity</span> <span class="o">{</span>
+
+    <span class="nc">ActivityBottomBinding</span> <span class="n">binding</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+        <span class="n">setContentView</span><span class="o">((</span><span class="n">binding</span> <span class="o">=</span> <span class="nc">ActivityBottomBinding</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">getLayoutInflater</span><span class="o">())).</span><span class="na">getRoot</span><span class="o">());</span>
+
+        <span class="n">setSupportActionBar</span><span class="o">(</span><span class="n">binding</span><span class="o">.</span><span class="na">toolbar</span><span class="o">);</span>
+
+        <span class="nc">NavController</span> <span class="n">navController</span> <span class="o">=</span> <span class="o">((</span><span class="nc">NavHostFragment</span><span class="o">)</span> <span class="n">getSupportFragmentManager</span><span class="o">().</span><span class="na">findFragmentById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">nav_host_fragment</span><span class="o">)).</span><span class="na">getNavController</span><span class="o">();</span>
+        <span class="nc">NavigationUI</span><span class="o">.</span><span class="na">setupWithNavController</span><span class="o">(</span><span class="n">binding</span><span class="o">.</span><span class="na">bottomNavView</span><span class="o">,</span> <span class="n">navController</span><span class="o">);</span>
+        <span class="nc">NavigationUI</span><span class="o">.</span><span class="na">setupWithNavController</span><span class="o">(</span><span class="n">binding</span><span class="o">.</span><span class="na">toolbar</span><span class="o">,</span> <span class="n">navController</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></table></code></div></div><p>Ejecuta la app, y comprueba que en la <code class="language-plaintext highlighter-rouge">BottomActivity</code> se puede navegar por los 3 destino usando el <code class="language-plaintext highlighter-rouge">BottomNavigationView</code>.</p><h2 id="optionsmenu"><span class="mr-2">OptionsMenu</span><a href="#optionsmenu" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>El <code class="language-plaintext highlighter-rouge">OptionsMenu</code> es el menu desplegable que aparece en la parte superior derecha cuando se hace clic en el icono de los 3 puntos</p><p><img data-src="https://i.imgur.com/WYMvHXW.png" alt="" data-proofer-ignore></p><p>Lo usaremos para navegar a 3 destinos</p><p>Crea el grafo de navegación <code class="language-plaintext highlighter-rouge">options_graph.xml</code> y añade 3 destinos: <code class="language-plaintext highlighter-rouge">Options1Fragment</code>, <code class="language-plaintext highlighter-rouge">Options2Fragment</code> y <code class="language-plaintext highlighter-rouge">Options3Fragment</code>.</p><p><img data-src="https://i.imgur.com/O6F9CMC.png" alt="" data-proofer-ignore></p><p>Añade el <code class="language-plaintext highlighter-rouge">NavHostFragment</code> en el layout <code class="language-plaintext highlighter-rouge">activity_options.xml</code>. Colócalo dentro del <code class="language-plaintext highlighter-rouge">ConstraintLayout</code>:</p><p><code class="language-plaintext highlighter-rouge">res/layout/activity_options.xml</code></p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre><span class="nt">&lt;androidx.constraintlayout.widget.ConstraintLayout</span> <span class="err">...</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;androidx.fragment.app.FragmentContainerView</span>
+        <span class="na">android:name=</span><span class="s">"androidx.navigation.fragment.NavHostFragment"</span>
+        <span class="na">android:id=</span><span class="s">"@+id/nav_host_fragment"</span>
+        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+        <span class="na">app:defaultNavHost=</span><span class="s">"true"</span>
+        <span class="na">app:navGraph=</span><span class="s">"@navigation/options_graph"</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+</pre></table></code></div></div><p>Observa que hemos enlazado el <code class="language-plaintext highlighter-rouge">NavHostFragment</code> con el grafo <code class="language-plaintext highlighter-rouge">options_graph</code>.</p><h3 id="menu-1"><span class="mr-2">Menu</span><a href="#menu-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Crea el archivo de menú para el OptionsMenu (<code class="language-plaintext highlighter-rouge">res/menu/options_menu.xml</code>). Añade los ítems:</p><p><code class="language-plaintext highlighter-rouge">res/menu/options_menu.xml</code></p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;menu</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+    <span class="na">xmlns:app=</span><span class="s">"http://schemas.android.com/apk/res-auto"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;item</span>
+        <span class="na">android:id=</span><span class="s">"@+id/options1Fragment"</span>
+        <span class="na">android:icon=</span><span class="s">"@android:drawable/ic_menu_directions"</span>
+        <span class="na">android:title=</span><span class="s">"Options 1"</span>
+        <span class="na">app:showAsAction=</span><span class="s">"always"</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;item</span>
+        <span class="na">android:id=</span><span class="s">"@+id/options2Fragment"</span>
+        <span class="na">android:icon=</span><span class="s">"@android:drawable/ic_menu_directions"</span>
+        <span class="na">android:title=</span><span class="s">"Options 2"</span> <span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;item</span>
+        <span class="na">android:id=</span><span class="s">"@+id/options3Fragment"</span>
+        <span class="na">android:icon=</span><span class="s">"@android:drawable/ic_menu_directions"</span>
+        <span class="na">android:title=</span><span class="s">"Options 3"</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/menu&gt;</span>
+</pre></table></code></div></div><p>En el item <code class="language-plaintext highlighter-rouge">options1Fragment</code> hemos añadido el atributo <code class="language-plaintext highlighter-rouge">app:showAsAction="always"</code>, esto hará que esta opción del menú no se muestre en el desplegable, sino que se muestre como un icono en la barra.</p><p><img data-src="https://i.imgur.com/afZoHRV.png" alt="" data-proofer-ignore></p><h3 id="navigationui-2"><span class="mr-2">NavigationUI</span><a href="#navigationui-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Por último, configuraremos <code class="language-plaintext highlighter-rouge">NavigationUI</code> para que gestione la navegación del Options Menu.</p><p><code class="language-plaintext highlighter-rouge">OptionsActivity.java</code></p><div class="language-java highlighter-rouge"><div class="code-header"> <span data-label-text="Java"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+</pre><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.Menu</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.MenuItem</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.navigation.NavController</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.navigation.fragment.NavHostFragment</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.navigation.ui.AppBarConfiguration</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.navigation.ui.NavigationUI</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">OptionsActivity</span> <span class="kd">extends</span> <span class="nc">AppCompatActivity</span> <span class="o">{</span>
+
+    <span class="nc">ActivityOptionsBinding</span> <span class="n">binding</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">NavController</span> <span class="n">navController</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+        <span class="n">setContentView</span><span class="o">((</span><span class="n">binding</span> <span class="o">=</span> <span class="nc">ActivityOptionsBinding</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">getLayoutInflater</span><span class="o">())).</span><span class="na">getRoot</span><span class="o">());</span>
+
+        <span class="n">setSupportActionBar</span><span class="o">(</span><span class="n">binding</span><span class="o">.</span><span class="na">toolbar</span><span class="o">);</span>
+
+        <span class="nc">AppBarConfiguration</span> <span class="n">appBarConfiguration</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AppBarConfiguration</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span>
+                <span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">options1Fragment</span><span class="o">,</span> <span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">options2Fragment</span>
+        <span class="o">)</span>
+                <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+
+        <span class="n">navController</span> <span class="o">=</span> <span class="o">((</span><span class="nc">NavHostFragment</span><span class="o">)</span> <span class="n">getSupportFragmentManager</span><span class="o">().</span><span class="na">findFragmentById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">nav_host_fragment</span><span class="o">)).</span><span class="na">getNavController</span><span class="o">();</span>
+        <span class="nc">NavigationUI</span><span class="o">.</span><span class="na">setupWithNavController</span><span class="o">(</span><span class="n">binding</span><span class="o">.</span><span class="na">toolbar</span><span class="o">,</span> <span class="n">navController</span><span class="o">,</span> <span class="n">appBarConfiguration</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onCreateOptionsMenu</span><span class="o">(</span><span class="nc">Menu</span> <span class="n">menu</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">getMenuInflater</span><span class="o">().</span><span class="na">inflate</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">menu</span><span class="o">.</span><span class="na">options_menu</span><span class="o">,</span> <span class="n">menu</span><span class="o">);</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onOptionsItemSelected</span><span class="o">(</span><span class="nc">MenuItem</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="nc">NavigationUI</span><span class="o">.</span><span class="na">onNavDestinationSelected</span><span class="o">(</span><span class="n">item</span><span class="o">,</span> <span class="n">navController</span><span class="o">)</span>
+                <span class="o">||</span> <span class="kd">super</span><span class="o">.</span><span class="na">onOptionsItemSelected</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></table></code></div></div><p>En esta activity se han anulado (<code class="language-plaintext highlighter-rouge">@Override</code>) dos métodos:</p><ul><li><p>El método <code class="language-plaintext highlighter-rouge">onCreateOptionsMenu()</code> establece los ítems del <code class="language-plaintext highlighter-rouge">OptionsMenu</code> (los que hemos establecido en el fichero <code class="language-plaintext highlighter-rouge">R.menu.options_menu</code>).</p><li><p>El método <code class="language-plaintext highlighter-rouge">onOptionsItemSelected()</code> hace que se use el <code class="language-plaintext highlighter-rouge">navController</code> para navegar al destino cuando se pulse en un ítem.</p></ul><p>Ejecuta la app y comprueba la navegación con el <code class="language-plaintext highlighter-rouge">OptionsMenu</code>. Observa que el primer ítem aparece como un icono en la barra. Y también que cuando se navega al tercer fragment, aparece el boton de “atrás”</p><p><img data-src="https://i.imgur.com/XooPU9f.png" alt="" data-proofer-ignore></p><p>, ya que no está puesto como destino Top-level.</p><h2 id="tablayout-y-viewpager2"><span class="mr-2">TabLayout y ViewPager2</span><a href="#tablayout-y-viewpager2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>El elemento <code class="language-plaintext highlighter-rouge">ViewPager2</code> permite crear vistas deslizantes a las que se puede navegar deslizando el dedo. El elemento <code class="language-plaintext highlighter-rouge">TabLayout</code> añade unas pestañas en la parte superior.</p><p><img data-src="https://i.imgur.com/Jx3gK9S.gif" alt="" data-proofer-ignore></p><p>Estos elementos no forman parte del componente <code class="language-plaintext highlighter-rouge">Navigation</code>, y no son gestionados por <code class="language-plaintext highlighter-rouge">NavigationUI</code>.</p><p>En la activity <code class="language-plaintext highlighter-rouge">TabbedActivity</code>, añadiremos un fragment que incluirá un <code class="language-plaintext highlighter-rouge">ViewPager2</code> y un <code class="language-plaintext highlighter-rouge">TabLayout</code>, que permitirán deslizarse entre 3 fragments (A, B y C).</p><p><img data-src="https://i.imgur.com/BGjFKG6.png" alt="" data-proofer-ignore></p><p>Empezaremos creando el grafo de navegación de la <code class="language-plaintext highlighter-rouge">TabbedActivity</code>, al que llamaremos <code class="language-plaintext highlighter-rouge">tabbed_graph.xml</code>. En este grafo añadimos únicamente el fragment <code class="language-plaintext highlighter-rouge">Tabbed1Fragment</code>.</p><p><img data-src="https://i.imgur.com/KY5jrit.png" alt="" data-proofer-ignore></p><p>Añadimos el <code class="language-plaintext highlighter-rouge">NavHostFragment</code> al layout <code class="language-plaintext highlighter-rouge">activity_tabbed.xml</code>:</p><p><code class="language-plaintext highlighter-rouge">res/layout/activity_tabbed.xml</code></p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre><span class="nt">&lt;androidx.constraintlayout.widget.ConstraintLayout</span> <span class="err">...</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;androidx.fragment.app.FragmentContainerView</span>
+        <span class="na">android:name=</span><span class="s">"androidx.navigation.fragment.NavHostFragment"</span>
+        <span class="na">android:id=</span><span class="s">"@+id/nav_host_fragment"</span>
+        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+        <span class="na">app:defaultNavHost=</span><span class="s">"true"</span>
+        <span class="na">app:navGraph=</span><span class="s">"@navigation/tabbed_graph"</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+</pre></table></code></div></div><p>En este <code class="language-plaintext highlighter-rouge">NavHostFragment</code> únicamente se mostrará el <code class="language-plaintext highlighter-rouge">Tabbed1Fragment</code>.</p><h3 id="crear-las-páginas-deslizantes"><span class="mr-2">Crear las páginas deslizantes</span><a href="#crear-las-páginas-deslizantes" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Crearemos 3 fragments (<em>A</em>, <em>B</em>, <em>C</em>), que serán los que se deslizen por el <code class="language-plaintext highlighter-rouge">Tabbed1Fragment</code>.</p><p>Estos 3 fragments <strong>no</strong> se crean en el grafo de navegación, ya que no se navegará entre ellos usando <code class="language-plaintext highlighter-rouge">Navigation</code>, sino usando el <code class="language-plaintext highlighter-rouge">ViewPager2</code>.</p><p>Llamaremos a estos fragments: <code class="language-plaintext highlighter-rouge">Tabbed1AFragment</code>, <code class="language-plaintext highlighter-rouge">Tabbed1BFragment</code> y <code class="language-plaintext highlighter-rouge">Tabbed1CFragment</code>.</p><p>Para crear un Fragment: clic-derecho sobre <strong>app</strong> y <code class="language-plaintext highlighter-rouge">New &gt; Fragment &gt; Fragment (Blank)</code>.</p><p>Crea los 3 fragments: <code class="language-plaintext highlighter-rouge">Tabbed1AFragment</code>, <code class="language-plaintext highlighter-rouge">Tabbed1BFragment</code> y <code class="language-plaintext highlighter-rouge">Tabbed1CFragment</code>.</p><p><img data-src="https://i.imgur.com/wcGnS2t.png" alt="" data-proofer-ignore></p><h3 id="añadir-el-viewpager2"><span class="mr-2">Añadir el ViewPager2</span><a href="#añadir-el-viewpager2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>En el layout del <code class="language-plaintext highlighter-rouge">Tabbed1Fragment</code> añadimos el <code class="language-plaintext highlighter-rouge">ViewPager2</code>. En él se mostrarán los 3 fragments (A,B,C) que hemos creado.</p><p><code class="language-plaintext highlighter-rouge">res/layout/fragment_tabbed1.xml</code></p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;FrameLayout</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+    <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+    <span class="na">android:layout_height=</span><span class="s">"match_parent"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;androidx.viewpager2.widget.ViewPager2</span>
+        <span class="na">android:id=</span><span class="s">"@+id/viewPager"</span>
+        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"match_parent"</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/FrameLayout&gt;</span>
+</pre></table></code></div></div><p>Para vincular los 3 fragments (A,B,C) con el <code class="language-plaintext highlighter-rouge">ViewPager2</code>, hay que llamar al método <code class="language-plaintext highlighter-rouge">setAdapter()</code> y pasárle un objeto <code class="language-plaintext highlighter-rouge">FragmentStateAdapter</code> con la configuración.</p><p>Realizaremos esta llamada en el método <code class="language-plaintext highlighter-rouge">onViewCreated()</code> del <code class="language-plaintext highlighter-rouge">Tabbed1Fragment</code>.</p><p>La clase <code class="language-plaintext highlighter-rouge">Tabbed1Fragment</code> debe quedar así:</p><p><code class="language-plaintext highlighter-rouge">Tabbed1Fragment.java</code></p><div class="language-java highlighter-rouge"><div class="code-header"> <span data-label-text="Java"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+</pre><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.LayoutInflater</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.View</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.ViewGroup</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.annotation.NonNull</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.annotation.Nullable</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.fragment.app.Fragment</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.viewpager2.adapter.FragmentStateAdapter</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Tabbed1Fragment</span> <span class="kd">extends</span> <span class="nc">Fragment</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">FragmentTabbed1Binding</span> <span class="n">binding</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="nc">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="nc">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="nc">ViewGroup</span> <span class="n">container</span><span class="o">,</span> <span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="o">(</span><span class="n">binding</span> <span class="o">=</span> <span class="nc">FragmentTabbed1Binding</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">inflater</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span> <span class="kc">false</span><span class="o">)).</span><span class="na">getRoot</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onViewCreated</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="nc">View</span> <span class="n">view</span><span class="o">,</span> <span class="nd">@Nullable</span> <span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onViewCreated</span><span class="o">(</span><span class="n">view</span><span class="o">,</span> <span class="n">savedInstanceState</span><span class="o">);</span>
+
+        <span class="n">binding</span><span class="o">.</span><span class="na">viewPager</span><span class="o">.</span><span class="na">setAdapter</span><span class="o">(</span><span class="k">new</span> <span class="nc">FragmentStateAdapter</span><span class="o">(</span><span class="k">this</span><span class="o">)</span> <span class="o">{</span>
+            <span class="nd">@NonNull</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="nc">Fragment</span> <span class="nf">createFragment</span><span class="o">(</span><span class="kt">int</span> <span class="n">position</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">switch</span> <span class="o">(</span><span class="n">position</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="k">case</span> <span class="mi">0</span><span class="o">:</span> <span class="k">default</span><span class="o">:</span>
+                        <span class="k">return</span> <span class="k">new</span> <span class="nf">Tabbed1AFragment</span><span class="o">();</span>
+                    <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+                        <span class="k">return</span> <span class="k">new</span> <span class="nf">Tabbed1BFragment</span><span class="o">();</span>
+                    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+                        <span class="k">return</span> <span class="k">new</span> <span class="nf">Tabbed1CFragment</span><span class="o">();</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getItemCount</span><span class="o">()</span> <span class="o">{</span>
+                <span class="k">return</span> <span class="mi">3</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></table></code></div></div><p>El objeto de clase <code class="language-plaintext highlighter-rouge">FragmentStateAdapter</code> configura el <code class="language-plaintext highlighter-rouge">viewPager</code> anulando dos métodos:</p><ul><li><p><code class="language-plaintext highlighter-rouge">createFragment()</code> retorna el fragment que se debe mostrar en función de la posición de la página.</p><li><p><code class="language-plaintext highlighter-rouge">getItemCount()</code> retorna el número de páginas que debe tener el viewPager.</p></ul><p>Si ejecutas la app, verás que se pueden deslizar los 3 fragments (A,B,C).</p><h3 id="añadir-el-tablayout"><span class="mr-2">Añadir el TabLayout</span><a href="#añadir-el-tablayout" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>En el layout <code class="language-plaintext highlighter-rouge">fragment_tabbed1.xml</code> añadimos el <code class="language-plaintext highlighter-rouge">&lt;TabLayout&gt;</code> justo arriba del <code class="language-plaintext highlighter-rouge">ViewPager2</code>. Reemplaza el contenido por el siguiente:</p><p><code class="language-plaintext highlighter-rouge">res/layout/fragment_tabbed1.xml</code></p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;LinearLayout</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+    <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+    <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+    <span class="na">android:orientation=</span><span class="s">"vertical"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;com.google.android.material.tabs.TabLayout</span>
+        <span class="na">android:id=</span><span class="s">"@+id/tabLayout"</span>
+        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;androidx.viewpager2.widget.ViewPager2</span>
+        <span class="na">android:id=</span><span class="s">"@+id/viewPager"</span>
+        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"match_parent"</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/LinearLayout&gt;</span>
+</pre></table></code></div></div><p>Hemos cambiado el <code class="language-plaintext highlighter-rouge">FrameLayout</code> por un <code class="language-plaintext highlighter-rouge">LinearLayout</code> con orientacion vertical, para que el TabLayout y el ViewPager2 se muestren un encima el otro.</p><p>Para vincular el <code class="language-plaintext highlighter-rouge">TabLayout</code> con el <code class="language-plaintext highlighter-rouge">ViewPager2</code>, de forma que la página cambie cuando se pulsa en una pestaña, y viceversa, hay que crear un objeto <code class="language-plaintext highlighter-rouge">TabLayoutMediator</code> al que se le pasan el <code class="language-plaintext highlighter-rouge">TabLayout</code> y <code class="language-plaintext highlighter-rouge">ViewPager2</code>. También se le pasa un <code class="language-plaintext highlighter-rouge">TabConfigurationStrategy</code> indicando el titulo que se debe mostrar en cada Tab. Por último, se llama al método <code class="language-plaintext highlighter-rouge">attach()</code> de este objeto.</p><p>Añade el código resaltado en <code class="language-plaintext highlighter-rouge">Tabbed1Fragment</code>:</p><p><code class="language-plaintext highlighter-rouge">Tabbed1Fragment.java</code></p><div class="language-java highlighter-rouge"><div class="code-header"> <span data-label-text="Java"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="¡Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+</pre><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Tabbed1Fragment</span> <span class="kd">extends</span> <span class="nc">Fragment</span> <span class="o">{</span>
+    <span class="o">...</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onViewCreated</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="nc">View</span> <span class="n">view</span><span class="o">,</span> <span class="nd">@Nullable</span> <span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="o">...</span>
+        <span class="n">binding</span><span class="o">.</span><span class="na">viewPager</span><span class="o">.</span><span class="na">setAdapter</span><span class="o">(</span><span class="k">new</span> <span class="nc">FragmentStateAdapter</span><span class="o">(</span><span class="k">this</span><span class="o">)</span> <span class="o">{</span>
+            <span class="o">...</span>
+        <span class="o">});</span>
+
+        <span class="k">new</span> <span class="nf">TabLayoutMediator</span><span class="o">(</span><span class="n">binding</span><span class="o">.</span><span class="na">tabLayout</span><span class="o">,</span> <span class="n">binding</span><span class="o">.</span><span class="na">viewPager</span><span class="o">,</span> <span class="k">new</span> <span class="nc">TabLayoutMediator</span><span class="o">.</span><span class="na">TabConfigurationStrategy</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onConfigureTab</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="nc">TabLayout</span><span class="o">.</span><span class="na">Tab</span> <span class="n">tab</span><span class="o">,</span> <span class="kt">int</span> <span class="n">position</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">switch</span> <span class="o">(</span><span class="n">position</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="k">case</span> <span class="mi">0</span><span class="o">:</span> <span class="k">default</span><span class="o">:</span>
+                        <span class="n">tab</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">"TAB A"</span><span class="o">);</span>
+                        <span class="k">break</span><span class="o">;</span>
+                    <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+                        <span class="n">tab</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">"TAB B"</span><span class="o">);</span>
+                        <span class="k">break</span><span class="o">;</span>
+                    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+                        <span class="n">tab</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">"TAB C"</span><span class="o">);</span>
+                        <span class="k">break</span><span class="o">;</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}).</span><span class="na">attach</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span> 
+</pre></table></code></div></div><p>Ahora ya se muestran los Tabs, con el título y sincronizados con las páginas.</p><h2 id="práctica"><span class="mr-2">Práctica</span><a href="#práctica" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>Desarrolla una app con una sola Activity, que implemente la navegación usando los elementos <code class="language-plaintext highlighter-rouge">NavigationView</code>, <code class="language-plaintext highlighter-rouge">BottomNavigationView</code>, <code class="language-plaintext highlighter-rouge">OptionsMenu</code> y <code class="language-plaintext highlighter-rouge">ViewPager2</code> + <code class="language-plaintext highlighter-rouge">TabLayout</code>.</p><p><img data-src="https://i.imgur.com/iT22KAW.gif" alt="" data-proofer-ignore></p><hr /><p>Webgrafía:</p><ul><li><a href="https://gerardfp.github.io/">gerardfp.github.io</a></ul></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/documentacion/categories/android/'>Android</a>, <a href='/documentacion/categories/navigation/'>navigation</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/documentacion/tags/java/" class="post-tag no-text-decoration" >java</a> <a href="/documentacion/tags/android/" class="post-tag no-text-decoration" >android</a> <a href="/documentacion/tags/navigation/" class="post-tag no-text-decoration" >navigation</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> Esta entrada está licenciada bajo <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> por el autor.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Compartir</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Navigation+-+Documentaci%C3%B3n&url=https%3A%2F%2Fmdoradom.github.io%2Fdocumentacion%2Fposts%2Fnavigation%2F" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Navigation+-+Documentaci%C3%B3n&u=https%3A%2F%2Fmdoradom.github.io%2Fdocumentacion%2Fposts%2Fnavigation%2F" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://t.me/share/url?url=https%3A%2F%2Fmdoradom.github.io%2Fdocumentacion%2Fposts%2Fnavigation%2F&text=Navigation+-+Documentaci%C3%B3n" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copiar enlace" data-title-succeed="¡Enlace copiado!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted"><div class="access"><div id="access-lastmod" class="post"><div class="panel-heading">Actualizado recientemente</div><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/documentacion/posts/fisicas-de-botw/">Físicas de The Legend of Zelda - Breath of the Wild</a><li><a href="/documentacion/posts/metodologia-testing/">Metodología sobre el testeo de software</a><li><a href="/documentacion/posts/principios-de-dise%C3%B1o-onboarding/">Principios de diseño: Onboarding</a><li><a href="/documentacion/posts/android-cheatsheet/">Android Cheat Sheet</a><li><a href="/documentacion/posts/navigation/">Navigation</a></ul></div><div id="access-tags"><div class="panel-heading">Etiquetas populares</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/documentacion/tags/android/">android</a> <a class="post-tag" href="/documentacion/tags/java/">java</a> <a class="post-tag" href="/documentacion/tags/json/">json</a> <a class="post-tag" href="/documentacion/tags/api/">api</a> <a class="post-tag" href="/documentacion/tags/template/">template</a> <a class="post-tag" href="/documentacion/tags/analisis/">analisis</a> <a class="post-tag" href="/documentacion/tags/c/">c</a> <a class="post-tag" href="/documentacion/tags/cheatsheet/">cheatsheet</a> <a class="post-tag" href="/documentacion/tags/design/">design</a> <a class="post-tag" href="/documentacion/tags/firebase/">firebase</a></div></div></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"><div class="panel-heading pl-3 pt-2 mb-2">Contenido</div><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4 mt-5"><div id="related-posts" class="mb-2 mb-sm-4"><h3 class="pt-2 mb-4 ml-1" data-toc-skip>Lecturas adicionales</h3><div class="card-deck mb-4"><div class="card"> <a href="/documentacion/posts/mapear-json-a-java/"><div class="card-body"> <em class="small" data-ts="1654665120" data-df="DD/MM/YYYY" > 08/06/2022 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Mapear JSON a Java</h3><div class="text-muted small"><p> Mapear JSON a Java El formato de datos JSON se basa en dos estructuras: Objetos: son una colección de pares clave/valor, y van entre llaves { } Arrays: son una lista de valores,...</p></div></div></a></div><div class="card"> <a href="/documentacion/posts/principios-de-dise%C3%B1o-onboarding/"><div class="card-body"> <em class="small" data-ts="1656298800" data-df="DD/MM/YYYY" > 27/06/2022 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Principios de diseño: Onboarding</h3><div class="text-muted small"><p> Onboarding El Onboarding es una unboxing virtual que ayuda a los usuarios a comenzar con una aplicación. Como usarlo El Onboarding tiene que tener un objetivo específico enfocado a nivel de fami...</p></div></div></a></div><div class="card"> <a href="/documentacion/posts/persistencia-en-ficheros/"><div class="card-body"> <em class="small" data-ts="1654235160" data-df="DD/MM/YYYY" > 03/06/2022 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Persistencia en ficheros</h3><div class="text-muted small"><p> Persistència en fitxers Path operations Paths , Path , Files Un objecte de classe Path conté el nom de fitxer i la llista de directoris que s’utilitzen per construir el camí i s’utilitza per ex...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/documentacion/posts/mapear-json-a-java/" class="btn btn-outline-primary" prompt="Anterior"><p>Mapear JSON a Java</p></a> <a href="/documentacion/posts/android-cheatsheet/" class="btn btn-outline-primary" prompt="Nuevo"><p>Android Cheat Sheet</p></a></div></div></div></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><div id="access-tags"><div class="panel-heading">Etiquetas populares</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/documentacion/tags/android/">android</a> <a class="post-tag" href="/documentacion/tags/java/">java</a> <a class="post-tag" href="/documentacion/tags/json/">json</a> <a class="post-tag" href="/documentacion/tags/api/">api</a> <a class="post-tag" href="/documentacion/tags/template/">template</a> <a class="post-tag" href="/documentacion/tags/analisis/">analisis</a> <a class="post-tag" href="/documentacion/tags/c/">c</a> <a class="post-tag" href="/documentacion/tags/cheatsheet/">cheatsheet</a> <a class="post-tag" href="/documentacion/tags/design/">design</a> <a class="post-tag" href="/documentacion/tags/firebase/">firebase</a></div></div></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><footer><div class="container pl-lg-4 pr-lg-4"><div class="d-flex justify-content-between align-items-center text-muted ml-md-3 mr-md-3"><div class="footer-left"><p class="mb-0"> © 2022 <a href="https://twitter.com/mariiiodorado_">Mario Dorado Martínez</a>. <span data-toggle="tooltip" data-placement="top" title="Salvo que se indique explícitamente, las entradas de este blog están licenciadas bajo la Creative Commons Attribution 4.0 International (CC BY 4.0) License por el autor.">Algunos derechos reservados.</span></p></div><div class="footer-right"><p class="mb-0"> Hecho con <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> usando el tema <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> .</p></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js"></script> <script> (function () { function updateMermaid(event) { if (event.source === window && event.data && event.data.direction === ModeToggle.ID) { const mode = event.data.message; if (typeof mermaid === "undefined") { return; } let expectedTheme = (mode === ModeToggle.DARK_MODE ? "dark" : "default"); let config = {theme: expectedTheme}; /* Re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */ $(".mermaid").each(function () { let svgCode = $(this).prev().children().html(); $(this).removeAttr("data-processed"); $(this).html(svgCode); }); mermaid.initialize(config); mermaid.init(undefined, ".mermaid"); } } let initTheme = "default"; if ($("html[data-mode=dark]").length > 0 || ($("html[data-mode]").length == 0 && window.matchMedia("(prefers-color-scheme: dark)").matches)) { initTheme = "dark"; } let mermaidConf = { theme: initTheme /* <default|dark|forest|neutral> */ }; /* Create mermaid tag */ $("pre").has("code.language-mermaid").each(function () { let svgCode = $(this).children().html(); $(this).addClass("unloaded"); $(this).after(`<pre class=\"mermaid\">${svgCode}</pre>`); }); mermaid.initialize(mermaidConf); window.addEventListener("message", updateMermaid); })(); </script><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/documentacion/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">¡Oops! No se encuentran resultados.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/es.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script> <script defer src="/documentacion/assets/js/dist/post.min.js"></script> <script> /* see: <https://docs.mathjax.org/en/latest/options/input/tex.html#tex-options> */ MathJax = { tex: { inlineMath: [ /* start/end delimiter pairs for in-line math */ ['$','$'], ['\\(','\\)'] ], displayMath: [ /* start/end delimiter pairs for display math */ ['$$', '$$'], ['\\[', '\\]'] ] } }; </script> <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/documentacion/unregister.js"></script>
