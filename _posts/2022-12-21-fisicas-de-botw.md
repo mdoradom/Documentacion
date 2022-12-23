@@ -154,7 +154,7 @@ Obtenemos que, la fuerza de la gravedad es igual a: **-32.09 m/s<sup>2</sup>** o
 
 ![](/assets/images/botw/separador.png)
 
-Utilizando varios elementos que encontramos sueltos por el mundo de **Breath of the Wild**, podemos crear fácilmente una suerte de catapulta, hemos querido como de fidedigna son las físicas comparándolas con la vida real.
+Utilizando varios elementos que encontramos sueltos por el mundo de **Breath of the Wild**, podemos crear fácilmente una suerte de catapulta, hemos querido como de fidedignas son las físicas comparándolas con la vida real.
 
 ![](/assets/images/botw/catapulta1.jpg){: width="560" height="315" }
 _Materiales para utilizados para crear la catapulta_
@@ -170,16 +170,16 @@ Primero, necesitamos saber la velocidad a la que sale despedido link. Teniendo e
 <p align="center">
 <iframe src="https://www.youtube.com/embed/xzITcvyslpQ" width="560" height="315" frameborder="0"></iframe>
 
-_Video con medidas_
+<p align="center"><i>Video con medidas</i></p>
 </p>
 
 <p align="center">
 <iframe src="https://www.youtube.com/embed/Ng4EZuRpI88" width="560" height="315" frameborder="0"></iframe>
 
-_Video con temporizador_
+<p align="center"><i>Video con temporizador</i></p>
 </p>
 
-**MRUA:**
+Para conseguir la velocidad inicial que adquiere Link al ser lanzado, vamos a utilizar la formula del **MRUA:**
 
 $$ X(t) = X_{0} + v_{0}t + \frac{1}{2} \cdot at^{2} $$
 
@@ -187,35 +187,40 @@ $$ 0 = 2.55 + v_{0} \cdot 2.44 + \frac{1}{2} \cdot (-33.34) \cdot 2.44^{2} $$
 
 $$ V_{0} = 93.32 m/s $$
 
-https://www.zonadiet.com/tablas/pesoideal.cgi
+Obtenemos que Link sale despedido a una velocidad de **93.32 m/s**.
 
-Peso link = 65kg
+El siguiente paso sería ver a cuanta fuerza es sometido Link durante el lanzamiento. Para esto necesitamos saber la masa de nuestro protagonista. Como no tenemos ninguna forma de medir cuanto pesa, hemos [consultado en internet](https://www.zonadiet.com/tablas/pesoideal.cgi) cual es el peso promedio para un adulto varón de 1.70 metros de altura y asumimos que ese es el peso del personaje, el cual es unos **65kg**
 
-85 milésimas en salir despedido desde el contacto de la piedra
+Lo siguiente es medir cuanto tiempo tarda Link en salir despedido desde que la piedra impacta contra la tabla, es decir, el tiempo que Link está acelerando. Utilizando el vídeo anterior vemos que link se despega de la tabla 85 milésimas después de que la piedra impacte.
 
-Velocidad inicial / Tiempo en salir despedido
+Dividiendo la velocidad inicial entre el tiempo que tarda Link en despegar, podemos calcular cual es la aceleración.
 
 $$ \frac{93.32}{0.085} = 1097.88 m/s^{2} $$
 
-aceleración * masa = fuerza que recibe link
+Lo cual nos dá que Link acelera a una velocidad de **1097.88 m/s<sup>2</sup>**.
+
+Sabiendo la **aceleración**, podemos multiplicarla por la **masa** y así obtener la **fuerza** que recibe el personaje.
 
 $$ 1097.88 \cdot 65 =  71.82kN $$
 
-Este valor procede de estudios militares sobre paracaidistas: el cuerpo humano de un deportista podría soportar una deceleración máxima de unos 15 G, es decir, 12 kN para una masa de 80 kg.
 
-https://www.petzl.com/ES/es/Sport/¿Como-se-ha-determinado-la-fuerza-de-choque-maxima-de-12kN-?ProductName=MAMBO-10-1-mm#:~:text=Este%20valor%20procede%20de%20estudios,una%20masa%20de%2080%20kg.
 
-con la velocidad inicial calculamos la energía cinética
+Según la web Petzl España: 
+>Este valor procede de estudios militares sobre paracaidistas: el cuerpo humano de un deportista podría soportar una deceleración máxima de unos 15 G, es decir, 12 kN para una masa de 80 kg.
+
+_¿Cómo se ha determinado la fuerza de choque máxima de 12kN? - Petzl España. (s. f.). https://www.petzl.com/ES/es/Sport/%C2%BFComo-se-ha-determinado-la-fuerza-de-choque-maxima-de-12kN-?ProductName=MAMBO-10-1-mm_
+
+Teniendo en cuenta la piedra no da toda la energía justo cuando choca con la plataforma, sino que es entregada "linealmente" hasta que la tabla toca el suelo, no podemos saber la masa exacta de la piedra, pero podemos determinar la masa mínima, esto lo podemos saber igualando la energía potencial de la piedra con la energía cinética de link, al hacer esto, sacaríamos la masa de la piedra si disipara toda su energía al contactar con la plataforma y no al contactar con el suelo.
+
+Sabiendo la velocidad inicial, podemos calcular la energía cinética de Link.
 
 $$ \frac{1}{2} \cdot mv^{2}$$
 
 $$ \frac{1}{2} \cdot 65 \cdot 93.32^{2} = 283.03kJ$$
 
-Teniendo en cuenta la piedra no da toda la energía en el choque con la plataforma, no podemos saber la masa exacta de la piedra, pero podemos determinar la masa mínima, esto lo podemos saber igualando la energía potencial de la piedra con la energía cinética de link, al hacer esto, sacaríamos la masa de la piedra si disipara toda su energía al contactar con la plataforma y no al contactar con el suelo.
+Para la altura, hemos cogido la altura total, porque, si pusiéramos la altura total - la altura de  plataforma, estaríamos diciendo que toda la energía se transfiere cuando la piedra toca la plataforma, pero eso no es verdad, así que asumimos que la energía es transferida de forma uniforme mientras la piedra empuja la plataforma y que transfiere toda la energía cuando toca el suelo. 
 
-Para la altura, hemos cogido la altura total, porque, si pusiéramos la altura total - la plataforma, estaríamos diciendo que toda la energía se transfiere cuando la piedra toca la plataforma, pero eso no es verdad, así que asumimos que la energía es transferida de forma uniforme mientras la piedra empuja la plataforma y que transfiere toda la energía cuando toca el suelo. 
-
-Así que esto es una aproximación de si toda la energía de la piedra fuera transferida a Link, lo cual es mentira porque en el vídeo se aprecia que la piedra aun tiene energía al tocar el suelo. Así que estos cálculos serían una cota inferior.
+Teniendo en cuenta esto, podemos decir que esto es una aproximación asumiendo que toda la energía de la piedra fuera transferida a Link, lo cual es mentira porque en el vídeo se aprecia que la piedra aun tiene energía al contactar el suelo, así que estos cálculos serían una cota inferior.
 
 $$ Ep = m \cdot g \cdot h $$
 
@@ -223,9 +228,9 @@ $$ m \cdot \left | -33.34 \right | \cdot 17.85 = 283.03kJ $$
 
 $$ m = \frac{283030}{\left | -33.34 \right | \cdot 17.85} = 475.59kg $$
 
-475.59kg es la masa mínima que tendría que tener la piedra para lanzar disparado a Link a esa velocidad.
+Podemos ver que, **475.59kg** es la masa mínima que tendría que tener la piedra para lanzar disparado a Link a esa velocidad.
 
-Para comprobar si en el juego, se conservan las energías, hemos mirado la energía potencial en el punto máximo de altura y la hemos comparado con la energía cinética que tiene Link al ser lanzado. 
+Para comprobar si en el juego, se conservan las energías, hemos mirado la **energía potencial** en el **punto máximo de altura** y la hemos comparado con la **energía cinética** que tiene **Link al ser lanzado**. 
 
 $$ Ep = m \cdot g \cdot h $$
 
@@ -233,11 +238,15 @@ $$ Ep = 65 \cdot \left | -33.34 \right | \cdot 21.7 - 2.55 = 47.02kJ$$
 
 $$ 283.03 - 47.02 = 236.01kJ $$
 
-Hay una pérdida de energía de 236.01kJ porque motivos (tirarse un triple)
+Haciendo estos cálculos, podemos observar que hay una pérdida de energía de 236.01kJ, lo cual es físicamente imposible ya que la energía es una fuerza conservativa. No sabemos cual puede ser el factor por el cual perdemos tanta energía, ya que la fricción con el aire no debería disipar tanta energía.
+
+Habiendo analizado todos estos parámetros, podemos decir que las físicas del videojuego son bastante dispares con las físicas reales.
 
 # Salto de Link
 
 ![](/assets/images/botw/separador.png)
+
+Teníamos curiosidad sobre si el juego tenía en cuenta el peso de Link a la hora de calcular las físicas dentro del juego. Para comprobar esto, hemos capturado dos vídeos del personaje saltando con una armadura y sus armas equipadas, lo cual aumentaría la masa que tiene que elevar Link a la hora de salta, y otro salto sin nada. En teoría, Link debería saltar mas sin tener nada equipado.
 
 <p align="center">
 <iframe src="https://www.youtube.com/embed/S1UJQTvV9-w" width="560" height="315" frameborder="0"></iframe>
@@ -256,10 +265,10 @@ Link al saltar, tiene una velocidad inicial de 0.95 m/s.
 
 No podemos calcular la fuerza con la que salta Link, ya que la animación es instantánea, no podemos medir cuanto tiempo Link está acelerando.
 
-También hemos observado que el videojuego no tiene en cuenta la masa de Link, ya que salta la misma altura cuando tiene equipada una armadura y sus armas.
-
 <p align="center">
 <iframe src="https://www.youtube.com/embed/kXUfvma6VYQ" width="560" height="315" frameborder="0"></iframe>
 </p>
 
 ![foto medidas salto](/assets/images/botw/salto2.png)
+
+Podemos observar que el videojuego no tiene en cuenta la masa de Link, ya que salta la misma altura cuando tiene equipada una armadura y sus armas que cuando no las tiene equipada.
