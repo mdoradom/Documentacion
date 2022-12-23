@@ -250,8 +250,10 @@ Teníamos curiosidad sobre si el juego tenía en cuenta el peso de Link a la hor
 
 <p align="center">
 <iframe src="https://www.youtube.com/embed/S1UJQTvV9-w" width="560" height="315" frameborder="0"></iframe>
+</p>
 
-![foto medidas salto](/assets/images/botw/salto.png)
+![foto medidas salto](/assets/images/botw/salto.png){: width="560" height="315" }
+_Medidas del salto de Link con armadura_
 
 **MRUA:**
 
@@ -269,6 +271,7 @@ No podemos calcular la fuerza con la que salta Link, ya que la animación es ins
 <iframe src="https://www.youtube.com/embed/kXUfvma6VYQ" width="560" height="315" frameborder="0"></iframe>
 </p>
 
-![foto medidas salto](/assets/images/botw/salto2.png)
+![foto medidas salto](/assets/images/botw/salto2.png){: width="560" height="315" }
+_Medidas del salto de Link sin armadura_
 
 Podemos observar que el videojuego no tiene en cuenta la masa de Link, ya que salta la misma altura cuando tiene equipada una armadura y sus armas que cuando no las tiene equipada.
