@@ -45,7 +45,7 @@ Primero de todo, hemos analizado una caída libre lanzando al personaje de Link 
 
 <iframe src="https://www.youtube.com/embed/TtMEWS2lYz0" width="560" height="315" frameborder="0"></iframe>
 
-![](/assets/images/botw/torre1.png){: width="1920" height="1080" }
+![](/assets/images/botw/torre1.jpg){: width="1920" height="1080" }
 _Comparativa de tamaño entre Link y la torre_
 
 <iframe src="https://www.youtube.com/embed/wsFKrTRr9J4" width="560" height="315" frameborder="0"></iframe>
