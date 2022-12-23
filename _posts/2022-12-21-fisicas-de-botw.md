@@ -22,9 +22,9 @@ image:
 
 ![](/assets/images/botw/separador.png)
 
-Hemos decidido analizar el videojuego **The Legend of Zelda: Breath of the Wild** ya que uno de sus grandes logros, es haber creado un sistema de físicas bastante elaborado que interactua entre si.
+Hemos decidido analizar el videojuego **The Legend of Zelda: Breath of the Wild**, ya que uno de sus grandes logros, es haber creado un sistema de físicas bastante elaborado que interactúa entre sí.
 
-Este sistema contempla que los metales son conductores, por tanto si utilizas elementos metálicos como espadas, escudos, etc, puedes crear una suerte de cables para así resolver puzzles.
+Este sistema contempla que los metales son conductores, por tanto, si utilizas elementos metálicos como espadas, escudos, etc., puedes crear una suerte de cables para así resolver puzzles.
 
 ![](https://i.imgur.com/miBXgFC.jpeg){: width="560" height="315" }
 _Ejemplo de como un jugador resuelve un puzzle de forma alternativa utilizando armas y armaduras como elementos para conducir la electricidad_
@@ -34,7 +34,7 @@ También, los objetos tienes propiedades físicas básicas. Por ejemplo, si est�
 
 <blockquote align="center" class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">BotW physics in a nutshell <a align="center" href="https://twitter.com/hashtag/BreathoftheWild?src=hash&amp;ref_src=twsrc%5Etfw">#BreathoftheWild</a> <a href="https://twitter.com/hashtag/NintendoSwitch?src=hash&amp;ref_src=twsrc%5Etfw">#NintendoSwitch</a> <a href="https://t.co/o341FlzcpI">pic.twitter.com/o341FlzcpI</a></p>&mdash; Pinwheel Popper (@PinwheelPopper) <a href="https://twitter.com/PinwheelPopper/status/1162063176520704001?ref_src=twsrc%5Etfw">August 15, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Otro ejemplo que nos hemos encontrado mientras grabábamos el material necesario para el análisis, es que si disparas una flecha contra piedra la flecha queda suelta en el suelo. Las ráfagas de viento las hacen rodar, y si es disparada contra una superficie en la que hay tierra o césped, la flecha queda clavada evitando el movimiento.
+Otro ejemplo que nos hemos encontrado mientras grabábamos el material necesario para el análisis, es que si disparas una flecha contra piedra, la flecha queda suelta en el suelo. Las ráfagas de viento las hacen rodar, y si es disparada contra una superficie en la que hay tierra o césped, la flecha queda clavada evitando el movimiento.
 
 <p align="center">
 <iframe src="https://www.youtube.com/embed/nTexDIfNbLU" width="560" height="315" frameborder="0"></iframe>
@@ -50,7 +50,7 @@ En el juego puedes encontrar diferentes minijuegos, uno de ellos inspirado en lo
 
 ![](/assets/images/botw/separador.png)
 
-Para tomar las medidas para realizar los cálculos, henos cogido como referencia un elemento del cual sabemos el tamaño, en este caso, tomamos la estatura del protagonista del juego; Link, la cual es de 1’70m. 
+Para tomar las medidas para realizar los cálculos, henos cogido como referencia un elemento del cual sabemos el tamaño, en este caso, tomamos la estatura del protagonista del juego; Link, la cual es de 1.70 metros.
 
 Gracias a este dato y a las capturas que hemos ido tomando dentro del juego, hemos ido colocando al personaje repetidas veces sobre las superficies que queríamos medir utilizando el programa Photoshop.
 
@@ -79,7 +79,7 @@ _Comparativa de tamaño entre Link y la torre_
 <iframe src="https://www.youtube.com/embed/wsFKrTRr9J4" width="560" height="315" frameborder="0"></iframe>
 </p>
 
-Al ser una caída libre, hemos utilizado la formula del MRUA, ya que es un movimiento acelerado por la gravedad.
+Al ser una caída libre, hemos utilizado la fórmula del MRUA, ya que es un movimiento acelerado por la gravedad.
 
 ## Tiempo en el juego
 
@@ -89,13 +89,13 @@ $$  0 = 78.2 + 0 + \frac{1}{2} \cdot 2.152 \cdot a^{2} $$
 
 $$ a^{2} = \frac{-78.2 - \frac{1}{2}}{2.152} = -33.83$$
 
-Haciendo los cálculos, podemos observar que la fuerza de la gravedad es de unos **-33.83 m/s<sup>2</sup>** o **-19.9 links/s<sup>2</sup>**, lo cual es un valor muy superior al de la tierra (**9.8 m/s<sup>2</sup>**), esto significa que, en el mundo de The Legend of Zelda: Breath of the Wild, hay mas gravedad que en Júpiter (**24.79 m/s<sup>2</sup>**).
+Haciendo los cálculos, podemos observar que la fuerza de la gravedad es de unos **-33.83 m/s<sup>2</sup>** o **-19.9 links/s<sup>2</sup>**, lo cual es un valor muy superior al de la tierra (**9.8 m/s<sup>2</sup>**), esto significa que, en el mundo de The Legend of Zelda: Breath of the Wild, hay más gravedad que en Júpiter (**24.79 m/s<sup>2</sup>**).
 
 ## Tiempo en la vida real
 
 Haciendo los cálculos con la gravedad que tenemos en el planeta tierra, podemos obtener el tiempo que tardaría Link en caer desde lo alto de la torre hasta el suelo y ver la diferencia con los tiempos que hemos medido dentro del juego.
 
-Utilizamos la formula del **MRUA:**
+Utilizamos la fórmula del **MRUA:**
 
 $$ X(t) = X_{0} + v_{0}t + \frac{1}{2} \cdot at^{2} $$
 
@@ -111,7 +111,7 @@ Para analizar que factores físicos tiene en cuenta el videojuego a la hora de r
 
 Para calcular el tiro parabólico, necesitamos saber el **ángulo** en el cual sale disparada la flecha, **cuanto tiempo tarda** en impactar contra el suelo y a **cuanta distancia impacta**.
 
-Para obtener el **ángulo** con el que sale la flecha, hemos cogido la imagen dónde se ve la trayectoria de la flecha con su respectiva parábola y dibujamos un triángulo aproximado para sacar sus ejes y calcular las distancias a partir de los pixeles de largo y alto que ocupan.
+Para obtener el **ángulo** con el que sale la flecha, hemos cogido la imagen dónde se ve la trayectoria de la flecha con su respectiva parábola y dibujamos un triángulo aproximado para sacar sus ejes y calcular las distancias a partir de los píxeles de largo y alto que ocupan.
 
 Una vez colocados los ejes, cogemos la longitud del eje X y del eje Y, buscamos la tangente:
 
@@ -136,11 +136,11 @@ Para medir la **distancia que ha recorrido la flecha**, hemos hecho una captura 
 ![](/assets/images/botw/tiro_parabolico.png){: width="560" height="315" }
 _Parábola que realiza la flecha al ser disparada_
 
-Al final con todos estos valores obtenemos que la flecha es disparada con unos **14.3 grados** de inclinación y recorre **64.6 metros** en **1 segundo**.
+Al final, con todos estos valores obtenemos que la flecha es disparada con unos **14.3 grados** de inclinación y recorre **64.6 metros** en **1 segundo**.
 
 A continuación, vamos a descomponer el vector velocidad en dos componentes: velocidad horizontal y velocidad vertical.
 
-Para calcular la velocidad horizontal, tenemos que dividir la distancia que recorre la flecha entre el tiempo que tarda en recorrerla. Esto es así ya que asumimos que es una velocidad constante, ya que al ser una flecha, la fricción con el aire es mínima.
+Para calcular la velocidad horizontal, tenemos que dividir la distancia que recorre la flecha entre el tiempo que tarda en recorrerla. Esto es así, ya que asumimos que es una velocidad constante, ya que al ser una flecha, la fricción con el aire es mínima.
 
 $$ \frac{64.6}{1} = 64.6$$
 
@@ -164,7 +164,7 @@ $$ V_y = 64.6 \cdot \tan 14.3^{\circ} = 16.47m/s $$
 
 Esto nos da que la velocidad vertical es igual a **16.47 m/s** o **9.69 links/s**.
 
-Para calcular la gravedad, hemos utilizado la formula del MRUA, con la componente de velocidad vertical, ya que esta velocidad está influenciada por la aceleración que ejerce la gravedad, sin embargo, la horizontal no.
+Para calcular la gravedad, hemos utilizado la fórmula del MRUA, con la componente de velocidad vertical, ya que esta velocidad está influenciada por la aceleración que ejerce la gravedad, sin embargo, la horizontal no.
 
 **MRUA:**
 
@@ -208,7 +208,7 @@ Primero, necesitamos saber la velocidad a la que sale despedido Link, teniendo e
 <p align="center"><i>Video con temporizador</i></p>
 </p>
 
-Para conseguir la velocidad inicial que adquiere Link al ser lanzado, vamos a utilizar la formula del **MRUA:**
+Para conseguir la velocidad inicial que adquiere Link al ser lanzado, vamos a utilizar la fórmula del **MRUA:**
 
 $$ X(t) = X_{0} + v_{0}t + \frac{1}{2} \cdot at^{2} $$
 
@@ -218,15 +218,15 @@ $$ V_{0} = 93.32 m/s $$
 
 Obtenemos que Link sale despedido a una velocidad de **93.32 m/s** o **54,89 links/s**.
 
-El siguiente paso sería ver a cuanta fuerza es sometido Link durante el lanzamiento. Para esto necesitamos saber la masa de nuestro protagonista. Como no tenemos ninguna forma de medir cuanto pesa, hemos [consultado en internet](https://www.zonadiet.com/tablas/pesoideal.cgi) cuál es el peso promedio para un adulto varón de 1.70 metros de altura y asumimos que ese es el peso del personaje, el cual es de unos **65kg**.
+El siguiente paso sería ver a cuanta fuerza es sometido Link durante el lanzamiento. Para esto necesitamos saber la masa de nuestro protagonista. Como no tenemos ninguna forma de medir cuanto pesa, hemos [consultado en internet](https://www.zonadiet.com/tablas/pesoideal.cgi) cuál es el peso promedio para un adulto varón de 1.70 metros de altura y asumimos que ese es el peso del personaje, el cual es de unos **65 kg**.
 
-Lo siguiente es medir cuanto tiempo tarda Link en salir despedido desde que la piedra impacta contra la tabla, es decir, el tiempo que Link está acelerando. Utilizando el vídeo anterior, vemos que link se despega de la tabla 85 milésimas después de que la piedra impacte.
+Lo siguiente es medir cuanto tiempo tarda Link en salir despedido desde que la piedra impacta contra la tabla, es decir, el tiempo que Link está acelerando. Utilizando el vídeo anterior, vemos qué link se despega de la tabla 85 milésimas después de que la piedra impacte.
 
-Dividiendo la velocidad inicial entre el tiempo que tarda Link en despegar, podemos calcular cual es la aceleración.
+Dividiendo la velocidad inicial entre el tiempo que tarda Link en despegar, podemos calcular cuál es la aceleración.
 
 $$ \frac{93.32}{0.085} = 1097.88 m/s^{2} $$
 
-Lo cual nos da que Link acelera a una velocidad de **1097.88 m/s<sup>2</sup>** o **645,81 links/s<sup>2</sup>**.
+Lo cual nos da que Link acelera a una velocidad de, **1097.88 m/s<sup>2</sup>** o **645,81 links/s<sup>2</sup>**.
 
 Sabiendo la **aceleración**, podemos multiplicarla por la **masa** y así obtener la **fuerza** que recibe el personaje.
 
@@ -253,7 +253,7 @@ $$ m \cdot \left | -33.34 \right | \cdot 17.85 = 283.03kJ $$
 
 $$ m = \frac{283030}{\left | -33.34 \right | \cdot 17.85} = 475.59kg $$
 
-Podemos ver que, **475.59kg** es la masa mínima que tendría que tener la piedra para disparar a Link a esa velocidad.
+Podemos ver que, **475.59 kg** es la masa mínima que tendría que tener la piedra para disparar a Link a esa velocidad.
 
 Para comprobar si en el juego, se conservan las energías, hemos mirado la **energía potencial** en el **punto máximo de altura** y la hemos comparado con la **energía cinética** que tiene **Link al ser lanzado**. 
 
@@ -263,7 +263,7 @@ $$ Ep = 65 \cdot \left | -33.34 \right | \cdot 21.7 - 2.55 = 47.02kJ$$
 
 $$ 283.03 - 47.02 = 236.01kJ $$
 
-Haciendo estos cálculos, podemos observar que hay una pérdida de energía de 236.01kJ, lo cual no es realista, ya que la energía es una magnitud conservativa. No sabemos cual puede ser el factor por el cual perdemos tanta energía, ya que la fricción con el aire no debería disiparla tanto.
+Haciendo estos cálculos, podemos observar que hay una pérdida de energía de **236.01 kJ**, lo cual no es realista, ya que la energía es una magnitud conservativa. No sabemos cual puede ser el factor por el cuál perdemos tanta energía, ya que la fricción con el aire no debería disiparla tanto.
 
 Habiendo analizado todos estos parámetros, podemos decir que las físicas del videojuego son bastante dispares con las físicas reales.
 
@@ -288,7 +288,7 @@ $$ 0 = 0 + v_{0} \cdot 0.27 + \frac{1}{2} \cdot (-33.34) \cdot 0.27^{2} $$
 
 $$ v_{0} = 0.95m/s $$
 
-Link al saltar, tiene una velocidad inicial de 0.95 m/s.
+Link, al saltar, tiene una velocidad inicial de **0.95 m/s** o **0.56 links/s**.
 
 No podemos calcular la fuerza con la que salta Link, ya que la animación es instantánea, no podemos medir cuanto tiempo Link está acelerando.
 
