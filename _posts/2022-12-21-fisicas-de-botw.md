@@ -30,13 +30,19 @@ También, los objetos tienes propiedades físicas básicas. Por ejemplo, si est�
 
 Otro ejemplo que nos hemos encontrado mientras grabábamos el material necesario para el análisis, es que si disparas una flecha contra piedra, la flecha queda suelta, y las ráfagas de viento las hacen rodar por el suelo, sin embargo, si es disparada contra una superficie en la que hay tierra o césped, la flecha queda clavada y no se mueve por las ráfagas de viento.
 
+<p align="center">
 <iframe src="https://www.youtube.com/embed/nTexDIfNbLU" width="560" height="315" frameborder="0"></iframe>
+</p>
 
+<p align="center">
 <iframe src="https://www.youtube.com/embed/D3FdJk9vwDA" width="560" height="315" frameborder="0"></iframe>
+</p>
 
 # Como hemos tomado medidas
 
 ![](/assets/images/botw/separador.png)
+
+Para tomar las medidas con las que hemos realizado los cálculos, cogemos como referencia al protagonista del juego, Link. Su estatura es de 1’70m. Gracias a este dato y a las capturas de pantalla dentro de la partida, lo hemos ido colocando de forma vertical sobre las superficies que queríamos medir en Photoshop, y, a partir del número que contábamos, multiplicamos por su altura. De esta forma sacamos de forma aproximada en metros la longitud de los diferentes recursos.
 
 # Caída libre
 
@@ -44,17 +50,16 @@ Otro ejemplo que nos hemos encontrado mientras grabábamos el material necesario
 
 Primero de todo, hemos analizado una caída libre lanzando al personaje de Link desde una torre, así podremos saber la gravedad que hay dentro del videojuego y ver si es un valor realista.
 
+<p align="center">
 <iframe src="https://www.youtube.com/embed/TtMEWS2lYz0" width="560" height="315" frameborder="0"></iframe>
+</p>
 
 ![](/assets/images/botw/torre1.jpg){: width="560" height="315" }
 _Comparativa de tamaño entre Link y la torre_
 
+<p align="center">
 <iframe src="https://www.youtube.com/embed/wsFKrTRr9J4" width="560" height="315" frameborder="0"></iframe>
-
-- **h suelo:** 0 m
-- **h torre:** 78.2 m
-- **t caída:** 2.152 s
-- **a:** ?
+</p>
 
 Al ser una caída libre, hemos utilizado la forma del MRUA, ya que es un movimiento acelerado por la gravedad.
 
@@ -92,7 +97,9 @@ Para obtener el **ángulo**, **INSERTAR COSA DE MARTRA**
 
 Para saber cuanto **tiempo tarda** en impactar contra el suelo, hemos disparado la flecha y cronometrado cuanto tiempo tarda en impactar el suelo.
 
+<p align="center">
 <iframe src="https://www.youtube.com/embed/q6r8Fk71xdA" width="560" height="315" frameborder="0"></iframe>
+</p>
 
 Para medir la **distancia que ha recorrido la flecha**, hemos hecho una captura colocando el personaje desde la posición que se ha disparado la flecha, y otra dónde ha impactado la flecha, y utilizando al personaje como forma de medida, hemos sacado la distancia.
 
@@ -160,11 +167,15 @@ _Perspectiva del jugador antes de soltar la piedra_
 
 Primero, necesitamos saber la velocidad a la que sale despedido link. Teniendo en cuenta la **gravedad**, el **tiempo** que tarda en caer y la **posición inicial**.
 
+<p align="center">
 <iframe src="https://www.youtube.com/embed/xzITcvyslpQ" width="560" height="315" frameborder="0"></iframe>{: width="560" height="315" }
 _Video con medidas_
+</p>
 
+<p align="center">
 <iframe src="https://www.youtube.com/embed/Ng4EZuRpI88" width="560" height="315" frameborder="0"></iframe>{: width="560" height="315" }
 _Video con temporizador_
+</p>
 
 **MRUA:**
 
@@ -226,6 +237,7 @@ Hay una pérdida de energía de 236.01kJ porque motivos (tirarse un triple)
 
 ![](/assets/images/botw/separador.png)
 
+<p align="center">
 <iframe src="https://www.youtube.com/embed/S1UJQTvV9-w" width="560" height="315" frameborder="0"></iframe>
 
 ![foto medidas salto](/assets/images/botw/salto.png)
@@ -244,6 +256,8 @@ No podemos calcular la fuerza con la que salta Link, ya que la animación es ins
 
 También hemos observado que el videojuego no tiene en cuenta la masa de Link, ya que salta la misma altura cuando tiene equipada una armadura y sus armas.
 
+<p align="center">
 <iframe src="https://www.youtube.com/embed/kXUfvma6VYQ" width="560" height="315" frameborder="0"></iframe>
+</p>
 
 ![foto medidas salto](/assets/images/botw/salto2.png)
