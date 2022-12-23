@@ -31,8 +31,6 @@ Otro ejemplo que nos hemos encontrado mientras grabábamos el material necesario
 
 <iframe src="https://www.youtube.com/embed/nTexDIfNbLU" width="560" height="315" frameborder="0"></iframe>
 
-
-
 <iframe src="https://www.youtube.com/embed/D3FdJk9vwDA" width="560" height="315" frameborder="0"></iframe>
 
 # Como hemos tomado medidas
@@ -41,9 +39,16 @@ Otro ejemplo que nos hemos encontrado mientras grabábamos el material necesario
 
 # Caída libre
 
+![](/assets/images/botw/separador.png)
+
 Primero de todo, hemos analizado una caída libre lanzando al personaje de Link desde una torre, así podremos saber la gravedad que hay dentro del videojuego y ver si es un valor realista.
 
 <iframe src="https://www.youtube.com/embed/TtMEWS2lYz0" width="560" height="315" frameborder="0"></iframe>
+
+![](/assets/images/botw/torre1.png){: width="1920" height="1080" }
+_Comparativa de tamaño entre Link y la torre_
+
+<iframe src="https://www.youtube.com/embed/wsFKrTRr9J4" width="560" height="315" frameborder="0"></iframe>
 
 - **h suelo:** 0 m
 - **h torre:** 78.2 m
@@ -76,11 +81,13 @@ Haciendo los cálculos, obtenemos que la misma caída con unos valores de graved
 
 # Tiro parabólico
 
+![](/assets/images/botw/separador.png)
+
 Para analizar que factores físicos tiene en cuenta el videojuego a la hora de realizar un tiro parabólico, hemos disparado una flecha con un arco.
 
 Para calcular el tiro parabólico, necesitamos saber el **ángulo** en el cual sale disparada la flecha, **cuanto tiempo tarda** en impactar contra el suelo, a **cuanta distancia impacta**.
 
-Para calcular el **ángulo**, **INSERTAR COSA DE MARTRA**
+Para obtener el **ángulo**, **INSERTAR COSA DE MARTRA**
 
 Para saber cuanto **tiempo tarda** en impactar contra el suelo, hemos disparado la flecha y cronometrado cuanto tiempo tarda en impactar el suelo.
 
@@ -90,17 +97,17 @@ Para medir la **distancia que ha recorrido la flecha**, hemos hecho una captura 
 
 ![](/assets/images/botw/tiro_parabolico.png)
 
-![](/assets/images/botw/tiro_parabolico.png)
-
 Al final con todos estos valores obtenemos que la flecha es disparada con unos **14.3 grados** de inclinación y recorre **64.6 metros** en **1 segundo**.
 
 ![](/assets/images/botw/tiro_parabolico.png)
 
-Vel horizontal = distancia horizontal / tiempo    (constante)
+A continuación, vamos a descomponer el vector velocidad en dos componentes: velocidad horizontal y velocidad vertical.
 
-$$ \frac{64.6}{1} = 64.6 m/s = 38 link/s$$
+Para calcular la velocidad horizontal, tenemos que dividir la distancia que recorre la flecha entre el tiempo que tarda en recorrerla. Esto es así ya que asumimos que es una velocidad constante, ya que al ser una flecha, la fricción con el aire es mínima.
 
-38 link/s vel horizontal → const, porque hay poca fricción con aire
+$$ \frac{64.6}{1} = 64.6$$
+
+Esto nos da como resultado que la flecha tiene una velocidad horizontal de **64.6 m/s** o **38 links/s**.
 
 vel vertical → MRUA (aceleración gravedad) vel horizontal * tan (sen/cos)
 
@@ -108,11 +115,11 @@ $$ V_x = \left | V \right |\cdot \cos\alpha $$
 
 $$ V_y = \left | V \right |\cdot \sin\alpha $$
 
-(substituir módulo por velocidad horizontal)
+Substituimos el módulo por la velocidad horizontal.
 
 $$ V_y = (\frac{V_x}{\cos\alpha}) \cdot \sin\alpha $$
 
-(relación trigonométrica sin α / cos α = tan α)
+Relación trigonométrica sin α / cos α = tan α
 
 $$ V_y = V_x \cdot \frac{\sin\alpha}{\cos\alpha} $$ 
 
@@ -120,9 +127,11 @@ $$ V_y = V_x \cdot \tan\alpha $$
 
 $$ V_y = 64.6 \cdot \tan 14.3^{\circ} = 16.47m/s $$
 
-Velocidad vertical = 16.47 m/s
+Esto nos da que la velocidad vertical es igual a **16.47 m/s** o **9.69 links/s**.
 
-Para calcular la gravedad (utilizamos solo la componente de velocidad vertical, ya que para esta velocidad usamos la formula de MRUA por la gravedad, en la horizontal no) **MRUA:**
+Para calcular la gravedad, hemos utilizado la formula del MRUA, con la componente de velocidad vertical, ya que para esta velocidad está influenciada por la aceleración que ejerce la gravedad, sin embargo, en la horizontal no.
+
+**MRUA:**
 
 $$ X(t) = X_{0} + v_{0}t + \frac{1}{2} \cdot at^{2} $$
 
@@ -130,11 +139,13 @@ $$ 0 = 0.85 + 16.47 \cdot 1 + \frac{1}{2} \cdot a \cdot 1^{2} $$
 
 $$ a = \frac{(-0.85) - (-16.47) \cdot 1}{1^{2} \cdot \frac{1}{2}} = 32.09 m/s^{2}$$
 
-*0.85 = 0.5 links (altura inicial desde la que se lanza la flecha)
+*0.85 m = 0.5 links (altura inicial desde la que se lanza la flecha)
 
-Fuerza de la gravedad: **-32.09 m/s<sup>2</sup>**
+Obtenemos que, la fuerza de la gravedad es igual a: **-32.09 m/s<sup>2</sup>** o **-18.88 links/s<sup>2</sup>**
 
 # Catapulta
+
+![](/assets/images/botw/separador.png)
 
 Primero necesitamos saber la velocidad a la que sale despedido link. Teniendo en cuenta la **gravedad**, el **tiempo** que tarda en caer y la **posición inicial**.
 
@@ -195,6 +206,8 @@ $$ 283.03 - 47.02 = 236.01kJ $$
 Hay una pérdida de energía de 236.01kJ porque motivos (tirarse un triple)
 
 # Salto de Link
+
+![](/assets/images/botw/separador.png)
 
 <iframe src="https://www.youtube.com/embed/S1UJQTvV9-w" width="560" height="315" frameborder="0"></iframe>
 
