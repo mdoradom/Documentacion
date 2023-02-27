@@ -1,7 +1,7 @@
 ---
 title: SDL Documentation
 author: mario
-date: 2022-02-27 11:56:00 +0800
+date: 2022-02-27 08:56:00 +0800
 categories: [SDL]
 tags: [doc, sdl, C, C++]
 render_with_liquid: false
