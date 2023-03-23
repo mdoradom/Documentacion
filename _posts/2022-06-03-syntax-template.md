@@ -111,34 +111,34 @@ Click the hook will locate the footnote[^footnote], and here is another footnote
 
 - Default (with caption)
 
-![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" }
+![Desktop View](https://i.kym-cdn.com/entries/icons/original/000/034/474/mmm_yes_pet_froge_thumbnail.gif){: width="972" height="589" }
 _Full screen width and center alignment_
 
 <br>
 
 - Shadow
 
-![Window shadow](/posts/20190808/window.png){: .shadow width="1548" height="864" style="max-width: 90%" }
+![Window shadow](https://i.kym-cdn.com/entries/icons/original/000/034/474/mmm_yes_pet_froge_thumbnail.gif){: .shadow width="1548" height="864" style="max-width: 90%" }
 _shadow effect (visible in light mode)_
 
 <br>
 
 - Left aligned
 
-![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" style="max-width: 70%" .normal}
+![Desktop View](https://i.kym-cdn.com/entries/icons/original/000/034/474/mmm_yes_pet_froge_thumbnail.gif){: width="972" height="589" style="max-width: 70%" .normal}
 
 <br>
 
 - Float to left
 
-  ![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" style="max-width: 200px" .left}
+  ![Desktop View](https://i.kym-cdn.com/entries/icons/original/000/034/474/mmm_yes_pet_froge_thumbnail.gif){: width="972" height="589" style="max-width: 200px" .left}
   "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
 
 <br>
 
 - Float to right
 
-  ![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" style="max-width: 200px" .right}
+  ![Desktop View](https://i.kym-cdn.com/entries/icons/original/000/034/474/mmm_yes_pet_froge_thumbnail.gif){: width="972" height="589" style="max-width: 200px" .right}
   "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
 
 <br>
