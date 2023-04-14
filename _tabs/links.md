@@ -19,5 +19,6 @@ order: 4
 - [Latex Editor](https://latex.codecogs.com/legacy/eqneditor/editor.php)
 - [PixSpy](https://pixspy.com/)
 - [Overleaf](https://www.overleaf.com/)
+- [phind](https://www.phind.com/)
 
 ![](https://pbs.twimg.com/media/E8c6-2pWYAEAjRG.jpg)
