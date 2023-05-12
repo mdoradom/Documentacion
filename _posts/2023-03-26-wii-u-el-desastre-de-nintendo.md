@@ -158,11 +158,11 @@ En primer lugar, tenemos 1 GB de NAND dividido en dos bancos:
 
 * Los segundos 512 MB albergan el software que conforma el sistema operativo de Wii (menú del sistema, ranuras y canales de IOS), excepto los cargadores de arranque originales.
 
-![](https://www.copetti.org/images/consoles/wiiu/photos/motherboard/nand.5dd0ce128e435664dc0df000a8f6185685749c1098af8c308a9a222262e585c4.jpg)
+![](https://i.imgur.com/4vRtnAN.jpg)
 
 En segundo lugar, contamos con 8GB o 32GB de MultiMediaCard integrada (eMMC), según el modelo de la consola. Esta memoria está disponible solo para datos de usuario (juegos descargados, DLCs y actualizaciones de juegos).
 
-![](https://www.copetti.org/images/consoles/wiiu/photos/motherboard/emmc.e417bb1af8169c8ee147cf25e17cbd4f298ce592d5a44ff456a21879790437a6.jpg)
+![](https://i.imgur.com/Xt48nx5.jpeg)
 
 * **Almacenamiento Extra:**
 
@@ -178,27 +178,27 @@ También cuenta con una ranura para tarjetas SD, pero solo es aprovechada por ci
 
 * **Wii U GamePad:** Es el controlador principal de la Wii U, que cuenta con una pantalla táctil incorporada y un micrófono. El GamePad también tiene una cámara y un giroscopio incorporados, lo que permite usarlo como una vista en primera persona en ciertos juegos.
 
-![](https://upload.wikimedia.org/wikipedia/commons/8/8a/Wii_U_controller_photo.jpg)
+![](https://i.imgur.com/Pacgyfz.png)
 
 * **Wii U Pro Controller:** Es un controlador de juegos opcional que se asemeja a un controlador de consola tradicional, con dos joysticks y botones de acción.
 
-![](https://upload.wikimedia.org/wikipedia/commons/c/c3/Wii_U_Pro_Controller.JPG)
+![](https://i.imgur.com/0q3vwoW.png)
 
 * **Sensor Bar:** Es un dispositivo que se coloca encima o debajo de la televisión y que ayuda a detectar el movimiento de los controles remotos de la Wii y Wii U.
 
-![](https://static.wikia.nocookie.net/wiisportsresortwalkthrough/images/1/19/SensorBar.jpg/revision/latest?cb=20130830002511)
+![](https://i.imgur.com/eP6bhm2.png)
 
 * **Wii Remote:** Es el controlador de movimiento principal de la Wii, pero también es compatible con la Wii U. Tiene una variedad de sensores incorporados, como un acelerómetro y un sensor de infrarrojos.
 
-![](https://mod-center.com/37446-large_default/comprar-mando-wii-remote-plus-wii-wii-u-original-blanco-barato-wii-wii-u-accesorios-oferta-mod-center.jpg)
+![](https://i.imgur.com/QBArCmo.png)
 
 * **Wii U Proximity Sensor:** Es un sensor que detecta la proximidad del GamePad a la consola y ajusta la potencia de transmisión de la señal inalámbrica para ahorrar energía.
 
-![](https://cdn.mobilesyrup.com/wp-content/uploads/2023/01/wii-u-2023-scaled.jpg)
+![](https://i.imgur.com/dPSK2pQ.png)
 
 * **Adaptador de corriente:** Es el dispositivo que suministra energía a la Wii U.
 
-![](https://www.cablepelado.es/intranet/inventario/imagenes/adaptador-de-corriente-para-nintendo-wii-u_3.jpg)
+![](https://i.imgur.com/ijyWmbF.png)
 
 # Comparativa con el PC de la época y PC actual
 
