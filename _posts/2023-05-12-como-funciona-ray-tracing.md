@@ -76,7 +76,13 @@ Encontremos y normalicemos el vector ${\vec{t}}$ y los vectores ${\vec{b}}$ y ${
 ${\vec{t}} = T - E$, ${\vec{b}} = {\vec{t}} \times {\vec{v}}$
 
 
-${\vec{t}}_n = \frac{\vec{t}}{|\vec{t}|}$, ${\vec{b}}_n = \frac{\vec{b}}{|\vec{b}|}$, ${\vec{v}}_n = {\vec{t}}_n \times {\vec{b}}_n$
+${\vec{t}}_n = \frac{\vec{t}}{|\vec{t}|}$
+
+
+${\vec{b}}_n = \frac{\vec{b}}{|\vec{b}|}$ 
+
+
+${\vec{v}}_n = {\vec{t}}_n \times {\vec{b}}_n$
 
 
 Note que el centro de la vista $C = E + {\vec{t}}_{n}d$.
@@ -102,7 +108,7 @@ Ten en cuenta que $P_{ij} = E + {\vec{p}}{ij}$ y que el rayo ${\vec{R}}{ij} = P_
 ${\vec{p}}{ij} = {\vec{p}}{1m} + {\vec{q}}_x(i-1) + {\vec{q}}_y(j-1)$
 
 
-$\vec{r}{ij} = \frac{\vec{R}{ij}}{||\vec{R}{ij}||} = \frac{\vec{p}{ij}}{||\vec{p}_{ij}||}$
+$\vec{r}{ij} = \frac{\vec{R}{ij}}{|\vec{R}{ij}|} = \frac{\vec{p}{ij}}{|\vec{p}_{ij}|}$
 
 
 Donde $i$ y $j$ son índices de píxeles, y los valores de $i$ y $j$ varían desde $1$ hasta $k$ y desde $1$ hasta $m$, respectivamente.
