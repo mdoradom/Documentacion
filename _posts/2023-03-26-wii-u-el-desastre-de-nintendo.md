@@ -170,8 +170,7 @@ La Wii U cuenta con soporte para almacenamiento externo vía USB. La única limi
 
 Los puertos USB de la consola solo emiten hasta 500mA de corriente, lo que, irónicamente, no es suficiente para los discos duros USB típicos (los cuales necesitan alrededor de 900mA). Los usuarios en su día tenían que recurrir a combinar los dos puertos USB para suplir la demanda energética de los discos.
 
-![](https://external-preview.redd.it/TsKVKXdlejf8rI2tMt7nXuSySCtCyowJgKGOgThFUoA.jpg?auto=webp&s=2e06face84ae24acc2a0bf4ca9fadca25a5eaac0)
-
+![](https://i.imgur.com/gJFa0vc.png)
 
 También cuenta con una ranura para tarjetas SD, pero solo es aprovechada por ciertos programas y juegos que almacenan multimedia intercambiable (como imágenes). En caso de las tarjetas SD, es compatible con FAT32, así que no es necesario formatearla.
 
