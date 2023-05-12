@@ -172,6 +172,7 @@ Los puertos USB de la consola solo emiten hasta 500mA de corriente, lo que, iró
 
 ![](https://external-preview.redd.it/TsKVKXdlejf8rI2tMt7nXuSySCtCyowJgKGOgThFUoA.jpg?auto=webp&s=2e06face84ae24acc2a0bf4ca9fadca25a5eaac0)
 
+
 También cuenta con una ranura para tarjetas SD, pero solo es aprovechada por ciertos programas y juegos que almacenan multimedia intercambiable (como imágenes). En caso de las tarjetas SD, es compatible con FAT32, así que no es necesario formatearla.
 
 ## Otros dispositivos
