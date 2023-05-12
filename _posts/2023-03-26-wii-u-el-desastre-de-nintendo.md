@@ -1,6 +1,6 @@
 ---
 title: Arquitectura de Nintendo Wii U
-author: [mario, marta, apb8]
+author: [mario, marta, alexia]
 date: 2023-5-12 12:00:00 +0800
 categories: [Hardware]
 tags: [analisis, videojuegos, wiiu, nintendo]
