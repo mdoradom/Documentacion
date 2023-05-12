@@ -76,10 +76,10 @@ Encontremos y normalicemos el vector ${\vec{t}}$ y los vectores ${\vec{b}}$ y ${
 ${\vec{t}} = T - E$, ${\vec{b}} = {\vec{t}} \times {\vec{v}}$
 
 
-${\vec{t}}_n = \frac{\vec{t}}{|\vec{t}|}$
+$\vec{t}_n = \frac{\vec{t}}{\lvert\vec{t}\rvert}$
 
 
-${\vec{b}}_n = \frac{\vec{b}}{|\vec{b}|}$ 
+${\vec{b}}_n = \frac{\vec{b}}{\lvert\vec{b}\rvert}$ 
 
 
 ${\vec{v}}_n = {\vec{t}}_n \times {\vec{b}}_n$
