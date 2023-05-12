@@ -48,15 +48,22 @@ En la entrada (en el cálculo utilizamos normalización de vectores y producto c
 
 $ E\in \mathbb {R^{3}} $ eye position
 
+
 $ T\in \mathbb {R^{3}} $ target position
+
 
 $ \theta \in [0,\pi] $ field of view - for humans, we can assume ≈ π / 2 rad = 90°
 
+
+
 $ m,k\in \mathbb {N} $ numbers of square pixels on viewport vertical and horizontal direction
+
 
 $ i,j\in \mathbb {N},1\leq i\leq k\land 1\leq j\leq m $ numbers of actual pixel
 
+
 $ \vec{v}\in \mathbb {R^{3}} $ vertical vector which indicates where is up and down, usually $$ \vec{v}=[0,1,0] $$ (not visible on picture) - roll component which determine viewport rotation around point C (where the axis of rotation is the ET section)
+
 
 ![](https://upload.wikimedia.org/wikipedia/commons/b/b2/RaysViewportSchema.png)
 
@@ -68,25 +75,35 @@ Encontremos y normalicemos el vector ${\vec{t}}$ y los vectores ${\vec{b}}$ y ${
 
 ${\vec{t}} = T - E$, ${\vec{b}} = {\vec{t}} \times {\vec{v}}$
 
+
 ${\vec{t}}{n} = \frac{\vec{t}}{||\vec{t}||}$, ${\vec{b}}{n} = \frac{\vec{b}}{||\vec{b}||}$, ${\vec{v}}{n} = {\vec{t}}{n} \times {\vec{b}}_{n}$
+
 
 Note que el centro de la vista $C = E + {\vec{t}}_{n}d$.
 
+
 A continuación, calculamos los tamaños de la vista $h_x$, $h_y$ divididos por 2, incluyendo la relación de aspecto inversa $\frac{m-1}{k-1}$:
+
 
 $g_x = \frac{h_x}{2} = d \tan{\frac{\theta}{2}}, \qquad g_y = \frac{h_y}{2} = g_x\frac{m-1}{k-1}$
 
+
 Luego, calculamos los vectores de desplazamiento del siguiente píxel ${\vec{q}}_x$, ${\vec{q}}y$ a lo largo de direcciones paralelas a la vista (${b}$ y ${v}$), y el centro del píxel inferior izquierdo ${\vec{p}}{1m}$:
 
+
 ${\vec{q}}{x} = \frac{2g_x}{k-1}{\vec{b}}{n}, \qquad {\vec{q}}{y} = \frac{2g_y}{m-1}{\vec{v}}{n}, \qquad {\vec{p}}{1m} = {\vec{t}}{n}d - g_x{\vec{b}}{n} - g_y{\vec{v}}{n}$
+
 
 **Cálculos:**
 
 Ten en cuenta que $P_{ij} = E + {\vec{p}}{ij}$ y que el rayo ${\vec{R}}{ij} = P_{ij} - E = {\vec{p}}_{ij}$, por lo que
 
+
 ${\vec{p}}{ij} = {\vec{p}}{1m} + {\vec{q}}_x(i-1) + {\vec{q}}_y(j-1)$
 
+
 ${\vec{r}}{ij} = \frac{{\vec{R}}{ij}}{||{\vec{R}}{ij}||} = \frac{{\vec{p}}{ij}}{||{\vec{p}}_{ij}||}$
+
 
 Donde $i$ y $j$ son índices de píxeles, y los valores de $i$ y $j$ varían desde $1$ hasta $k$ y desde $1$ hasta $m$, respectivamente.
 
