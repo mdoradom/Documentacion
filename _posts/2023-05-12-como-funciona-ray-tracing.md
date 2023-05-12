@@ -108,7 +108,7 @@ Ten en cuenta que $P_{ij} = E + {\vec{p}}{ij}$ y que el rayo ${\vec{R}}{ij} = P_
 ${\vec{p}}{ij} = {\vec{p}}{1m} + {\vec{q}}_x(i-1) + {\vec{q}}_y(j-1)$
 
 
-$\vec{r}{ij} = \frac{\vec{R}{ij}}{|\vec{R}{ij}|} = \frac{\vec{p}{ij}}{|\vec{p}_{ij}|}$
+$\vec{r}{ij} = \frac{\vec{R}{ij}}{\lvert\vec{R}{ij}\rvert} = \frac{\vec{p}{ij}}{\lvert\vec{p}_{ij}\rvert}$
 
 
 Donde $i$ y $j$ son índices de píxeles, y los valores de $i$ y $j$ varían desde $1$ hasta $k$ y desde $1$ hasta $m$, respectivamente.
