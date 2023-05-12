@@ -180,7 +180,7 @@ Encima del directorio ``app``, haz clic-derecho y selecciona ``New > Vector Asse
 
 Selecciona ``Asset Type:`` **Local file** e introduce la ruta del fichero ``onboarding1.svg``:
 
-![](fragments/e6e53296705f0522.png)
+![](https://github.com/mdoradom/documentacion/post/fragments/e6e53296705f0522.png)
 
 Repite lo mismo para la imagen ``onboarding2.svg``.
 
