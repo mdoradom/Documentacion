@@ -25,4 +25,10 @@ order: 4
 - [Marmoset Toolbag](https://marmoset.co/toolbag/)
 - [Ascii Banner](https://manytools.org/hacker-tools/ascii-banner/)
 
+### Game Assets
+- [Itch.io](https://itch.io/game-assets)
+- [OpenGameArt](https://opengameart.org/)
+- [Kenney](https://www.kenney.nl/)
+- [LosPec](https://lospec.com/)
+
 ![](https://pbs.twimg.com/media/E8c6-2pWYAEAjRG.jpg)
