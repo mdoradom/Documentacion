@@ -36,15 +36,15 @@ También, los objetos tienes propiedades físicas básicas. Por ejemplo, si est�
 
 Otro ejemplo que nos hemos encontrado mientras grabábamos el material necesario para el análisis, es que si disparas una flecha contra piedra, la flecha queda suelta en el suelo. Las ráfagas de viento las hacen rodar, y si es disparada contra una superficie en la que hay tierra o césped, la flecha queda clavada evitando el movimiento.
 
-<p align="center">
+<div align="center">
 <iframe src="https://www.youtube.com/embed/nTexDIfNbLU" width="560" height="315" frameborder="0"></iframe>
-</p>
+</div>
 
 En el juego puedes encontrar diferentes minijuegos, uno de ellos inspirado en los bolos. En este podemos ver las físicas de la bola de nieve cayendo por el acantilado. Va cogiendo velocidad poco a poco hasta derribar las columnas de madera a partir de la fuerza que ha tomado en la caída. Este minijuego es muy curioso porque según en que punto tires la bola de nieve, no tiene la fuerza suficiente para derribarlos todos, así que lo hemos considerado un punto muy positivo para elegir Breath of the Wild como nuestro ejemplo para el proyecto.
 
-<p align="center">
+<div align="center">
 <iframe src="https://www.youtube.com/embed/D3FdJk9vwDA" width="560" height="315" frameborder="0"></iframe>
-</p>
+</div>
 
 # Como hemos tomado medidas
 
@@ -68,16 +68,16 @@ Para los tiempos, hemos grabado videos realizando las acciones a analizar y post
 
 Primero de todo, hemos analizado una caída libre lanzando al personaje de Link desde una torre, así podremos saber la gravedad que hay dentro del videojuego y ver si es un valor realista.
 
-<p align="center">
+<div align="center">
 <iframe src="https://www.youtube.com/embed/TtMEWS2lYz0" width="560" height="315" frameborder="0"></iframe>
-</p>
+</div>
 
 ![](/assets/images/botw/torre1.jpg){: width="560" height="315" }
 _Comparativa de tamaño entre Link y la torre_
 
-<p align="center">
+<div align="center">
 <iframe src="https://www.youtube.com/embed/wsFKrTRr9J4" width="560" height="315" frameborder="0"></iframe>
-</p>
+</div>
 
 Al ser una caída libre, hemos utilizado la fórmula del MRUA, ya que es un movimiento acelerado por la gravedad.
 
@@ -127,9 +127,9 @@ De esta forma, sacamos de forma aproximada el ángulo de la parábola.
 
 Para saber cuanto **tiempo tarda** en impactar contra el suelo, hemos disparado la flecha y cronometrado cuanto tiempo tarda en caer al suelo.
 
-<p align="center">
+<div align="center">
 <iframe src="https://www.youtube.com/embed/q6r8Fk71xdA" width="560" height="315" frameborder="0"></iframe>
-</p>
+</div>
 
 Para medir la **distancia que ha recorrido la flecha**, hemos hecho una captura colocando el personaje desde la posición que se ha disparado la flecha, y otra dónde ha impactado la flecha, y utilizando al personaje como forma de medida, hemos sacado la distancia.
 
@@ -196,17 +196,17 @@ _Perspectiva del jugador antes de soltar la piedra_
 
 Primero, necesitamos saber la velocidad a la que sale despedido Link, teniendo en cuenta los valores de la **gravedad**, el **tiempo** que tarda en caer y la **posición inicial**.
 
-<p align="center">
+<div align="center">
 <iframe src="https://www.youtube.com/embed/xzITcvyslpQ" width="560" height="315" frameborder="0"></iframe>
 
-<p align="center"><i>Video con medidas</i></p>
-</p>
+<div align="center"><i>Video con medidas</i></div>
+</div>
 
-<p align="center">
+<div align="center">
 <iframe src="https://www.youtube.com/embed/Ng4EZuRpI88" width="560" height="315" frameborder="0"></iframe>
 
-<p align="center"><i>Video con temporizador</i></p>
-</p>
+<div align="center"><i>Video con temporizador</i></div>
+</div>
 
 Para conseguir la velocidad inicial que adquiere Link al ser lanzado, vamos a utilizar la fórmula del **MRUA:**
 
@@ -273,9 +273,9 @@ Habiendo analizado todos estos parámetros, podemos decir que las físicas del v
 
 Teníamos curiosidad sobre si el juego tenía en cuenta el peso de Link a la hora de calcular las físicas dentro del juego. Para comprobar esto, hemos capturado dos vídeos del personaje saltando con una armadura y sus armas equipadas, lo cual aumentaría la masa que tiene que elevar Link a la hora de saltar, y otro salto sin nada. En teoría, Link debería saltar más sin tener nada equipado.
 
-<p align="center">
+<div align="center">
 <iframe src="https://www.youtube.com/embed/S1UJQTvV9-w" width="560" height="315" frameborder="0"></iframe>
-</p>
+</div>
 
 ![foto medidas salto](/assets/images/botw/salto2.png){: width="560" height="315" }
 _Medidas del salto de Link con armadura_
@@ -292,9 +292,9 @@ Link, al saltar, tiene una velocidad inicial de **0.95 m/s** o **0.56 links/s**.
 
 No podemos calcular la fuerza con la que salta Link, ya que la animación es instantánea, no podemos medir cuanto tiempo Link está acelerando.
 
-<p align="center">
+<div align="center">
 <iframe src="https://www.youtube.com/embed/kXUfvma6VYQ" width="560" height="315" frameborder="0"></iframe>
-</p>
+</div>
 
 ![foto medidas salto](/assets/images/botw/salto.png){: width="560" height="315" }
 _Medidas del salto de Link sin armadura_
