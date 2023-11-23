@@ -41,6 +41,7 @@ order: 4
 - [Kenney](https://www.kenney.nl/)
 - [LosPec](https://lospec.com/)
 - [Quixel](https://quixel.com/)
+- [StylizedTreeGenerator](https://reipart.gumroad.com/l/stylizedTreeGenerator)
 
 ### Stock Photos
 - [Picsum](https://picsum.photos/)
