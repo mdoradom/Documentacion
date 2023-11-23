@@ -40,6 +40,7 @@ order: 4
 - [OpenGameArt](https://opengameart.org/)
 - [Kenney](https://www.kenney.nl/)
 - [LosPec](https://lospec.com/)
+- [Quixel](https://quixel.com/)
 
 ### Stock Photos
 - [Picsum](https://picsum.photos/)
